@@ -5,7 +5,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <section>
-        <p>Verificando rutas.....</p>
+        <p>Contenedor Nav ACTIVO</p>
     </section>
   );
 };

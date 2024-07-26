@@ -1,11 +1,9 @@
-import React from 'react';
-
-const MainConcept = () => {
+const MainConcept= () => {
     return (
-        <div>
-            <p>Este es el componente MainConcept</p>
-        </div>
+      <section>
+          <p>Contenedor MainConcept ACTIVO</p>
+      </section>
     );
-}
+  };
 
 export default MainConcept;
