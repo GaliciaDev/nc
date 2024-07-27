@@ -1,5 +1,7 @@
 import React from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
+import './assets/css/main.css';
 
 /* Contenedores de sitio */
 import AboutExtend from './pages/AboutExtend.jsx';
@@ -16,33 +18,28 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import Reviews from './pages/Reviews.jsx';
 import SysEmail from './pages/SysEmail.jsx';
 
-
 function App() {
+  const location = useLocation();
+  console.log(location.pathname); // Agrega esto para depurar
+
   return (
     <div>
-      <AboutExtend />
-      <AddUser />
-      <Catalog />
-      <ErrorService />
-      <FormContact />
-      <Gallery />
-      <Home />
-      <MainConcept />
-      <Ncpanel />
-      <PanelView />
-      <ProductDetails />
-      <Reviews />
-      <SysEmail />
-
-
-      
-
-
-    
-      
-      
-
-
+      <MainConcept /> {/* Siempre muestra la barra de navegación */}
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Renderiza Home en la ruta raíz */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/aboutextend" element={<AboutExtend />} />
+        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/errorservice" element={<ErrorService />} />
+        <Route path="/formcontact" element={<FormContact />} />
+        <Route path="/gallery" element={<Gallery />} />        
+        <Route path="/ncpanel" element={<Ncpanel />} />
+        <Route path="/panelview" element={<PanelView />} />
+        <Route path="/productdetails" element={<ProductDetails />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/sysemail" element={<SysEmail />} />
+      </Routes>
     </div>
   );
 }

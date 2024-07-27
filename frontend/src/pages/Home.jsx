@@ -1,7 +1,11 @@
+
+import Cover from '../components/Cover.jsx';
+
+
 const Home= () => {
     return (
       <section>
-          <p>Contenedor Home ACTIVO</p>
+        <Cover />
       </section>
     );
   };
