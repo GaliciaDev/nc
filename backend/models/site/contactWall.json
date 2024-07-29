@@ -1,0 +1,31 @@
+{
+    "sectionTitle-Network": "Nuestra presencia digital",
+    "socialMediaData": [
+        {
+            "imgSrc": "https://img.icons8.com/material/480/facebook-new.png",
+            "title": "Facebook",
+            "link": "#"
+        },
+        {
+            "imgSrc": "https://img.icons8.com/material-outlined/384/instagram-new--v1.png",
+            "title": "Instagram",
+            "link": "#"
+        },
+        {
+            "imgSrc": "https://img.icons8.com/material-outlined/384/whatsapp--v1.png",
+            "title": "Whatsapp",
+            "link": "#"
+        },
+        {
+            "imgSrc": "https://img.icons8.com/pulsar-line/48/iphone14-pro.png",
+            "title": "Celular",
+            "link": "#"
+        },
+        {
+            "imgSrc": "https://img.icons8.com/ios-filled/50/phone.png",
+            "title": "Telefono",
+            "link": "#"
+        }
+
+    ]
+}

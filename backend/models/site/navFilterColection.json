@@ -1,0 +1,18 @@
+{
+    "title": "Colección 2024",
+    "navOptions": [
+      {
+        "section": "Colecciones",
+        "options": ["2024", "2023", "2022"]
+      },
+      {
+        "section": "Categorías",
+        "options": ["Sofá", "Esquinera"]
+      },
+      {
+        "section": "Materiales",
+        "options": ["Sintético", "Piel", "Tela"]
+      }
+    ],
+    "searchPlaceholder": "Encuentra tu modelo"
+  }

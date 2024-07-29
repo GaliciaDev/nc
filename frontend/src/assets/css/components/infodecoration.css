@@ -1,0 +1,83 @@
+/* Root de paletas de colores */
+.infodecoration-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.infodecoration-section-title {
+    text-align: center;
+    margin: 0 0 5px 0; /* Margen inferior añadido, márgenes restantes eliminados */
+    font-size: 1.5rem;
+}
+.infodecoration-social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.infodecoration-social-media-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding-top: 4px;
+    color: var(--textBw-color);
+    font-size: 1.2em;
+}
+.infodecoration-social-media-link img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 11px;
+}
+.infodecoration-social-media-link:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    margin-bottom: 7px;
+    width: 2em;
+    background-color: #000;
+    margin-left: 10px;
+}
+/* cambio de color como hover cuando se ponga el mouse en simad de los links */
+.infodecoration-social-media-link:hover {
+    text-decoration: none;
+    color: var(--color-links);
+}
+
+@media screen and (max-width: 768px) {
+    .infodecoration-section-title h2 {
+        font-size: 1.8rem;
+    }
+    /* Los elementos se acomodarán en columna */
+    .infodecoration-social-media-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .infodecoration-social-media-link {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center;
+        position: relative;
+    }
+    .infodecoration-social-media-link img {
+        margin-bottom: 5px; /* Ajustar margen inferior */
+    }
+    .infodecoration-social-media-link:not(:last-child)::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        bottom: -10px;
+        left: 25%;
+        transform: translateX(-50%); /* Centra la línea horizontalmente */
+    }
+}

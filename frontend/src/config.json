@@ -1,0 +1,46 @@
+{
+    "components": [
+      {
+        "name": "Cover",
+        "show": true,
+        "order": 1
+      },
+      {
+        "name": "Products",
+        "show": true,
+        "order": 2
+      },
+      {
+        "name": "About",
+        "show": true,
+        "order": 3
+      },
+      {
+        "name": "SwiperWall",
+        "show": true,
+        "order": 6
+      },
+      {
+        "name": "Infodecoration",
+        "show": true,
+        "order": 7
+      },
+      {
+        "name": "SocialWall",
+        "show": true,
+        "order": 10
+      },
+      {
+        "name": "ConctactWall",
+        "show": true,
+        "order": 4
+      },
+      
+      {
+        "name": "Footer",
+        "show": true,
+        "order": 10
+      }
+      
+    ]
+  }

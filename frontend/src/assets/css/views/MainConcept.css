@@ -22,7 +22,7 @@ nav.mainConcept-nav{
   .mainConcept-nav-links li img {
     height: 45px;
     width: auto;
-    margin-top: .8vh;
+    margin-top: 1.5vh;
     
   }
   /*Styling Links*/
@@ -32,6 +32,7 @@ nav.mainConcept-nav{
     width: 88vw;
     padding: 0 5vw;
     justify-content: space-evenly;
+    margin-top: 1vh;
     align-items: center;
     text-transform: uppercase;
     flex-grow: 1;

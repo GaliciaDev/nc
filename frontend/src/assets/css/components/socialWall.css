@@ -1,0 +1,96 @@
+/* Root de paletas de colores */
+.social-wall-container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  font-family: var(--font-main);
+}
+
+.social-item {
+  width: 50%;
+  height: 50vh;
+  position: relative;
+}
+
+.social-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Cambia a row si prefieres el texto al lado del logo */
+  align-items: center; /* Centra horizontalmente para column, verticalmente para row */
+  justify-content: center; /* Centra verticalmente para column, horizontalmente para row */
+}
+
+.social-item:hover .social-logo,
+.social-item:hover .social-text {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-logo {
+  width: 50px;
+  height: 50px;
+  filter: brightness(1000) invert(1); /* Ejemplo: convierte la imagen a blanco y negro */
+}
+
+.social-text {
+  color: var(--color-titleImgContainer); /* Ejemplo de cómo cambiar el color del texto a blanco */
+  font-size: 1.5em;
+}
+
+
+/* Parte responsiva */
+@media (max-width: 1024px) {
+  .social-item {
+      width: 100%;
+      height: 40vh;
+  }
+  .social-logo {
+      width: 40px;
+      height: 40px;
+  }
+  .social-text {
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-item {
+      width: 100%;
+      height: 30vh;
+  }
+  .social-logo {
+      width: 30px;
+      height: 30px;
+  }
+  .social-text {
+      font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-item {
+      width: 100%;
+      height: 25vh;
+  }
+  .social-logo {
+      width: 25px;
+      height: 25px;
+  }
+  .social-text {
+      font-size: 1.2em;
+  }
+
+  .social-item{
+    width: 100%;
+    height: 40vh
+  }
+}

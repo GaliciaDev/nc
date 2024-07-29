@@ -1,0 +1,77 @@
+/* Root de paletas de colores */
+.cw-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.cw-section-title {
+    text-align: center;
+    margin: 0 0 5px 0; /* Margen inferior añadido, márgenes restantes eliminados */
+    font-size: 1.5rem;
+}
+.cw-social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.cw-social-media-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding-top: 4px;
+    color: var(--textBw-color);
+    font-size: 1.2em;
+}
+.cw-social-media-link img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 11px;
+}
+.cw-social-media-link:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    margin-bottom: 7px;
+    width: 2em;
+    background-color: #000;
+    margin-left: 10px;
+}
+/* cambio de color como hover cuando se ponga el mouse en simad de los links */
+.cw-social-media-link:hover {
+    text-decoration: none;
+    color: var(--color-links);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    
+    
+
+    .cw-section-title h2{
+        font-size: 1.8rem;
+    }
+    
+    /* Los elementos se acomoraran en columna */
+    .cw-social-media-container {
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        gap: 10px;
+    }
+
+    /* Tambien las lineas */
+    .cw-social-media-link:not(:last-child)::after {
+        width: 100%;
+        margin-left: 0;
+    }
+}

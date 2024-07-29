@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+
+
+
+/* ============ Full Page Slider ================= */
+.creative-carousal--hero{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.creative-carousal--hero .carousel-slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    
+}
+.creative-carousal--hero .carousel-slider .swiper-slide {
+    height: 100%;
+    /* Calcular el ancho y alto de contenedor y cubrirlo con la imagen sin usar size cover*/
+    background-size: cover;
+    background-position: center;
+        
+    
+    
+}
+
+.creative-carousal--hero .carousel-slider .swiper-slide .inner {
+    width: 100%;
+    height: 100%; /* Asegura que el contenido interno ocupe el 100% de la altura del slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    opacity: 1; /* Asegura que el contenido interno sea completamente visible */
+    transition: opacity 0.25s ease-in-out;
+}
+.creative-carousal--hero .carousel-slider .swiper-slide:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #222327;
+    opacity: 0.7;
+}
+
+
+.creative-carousal--hero .carousel-slider .swiper-slide.swiper-slide-active:after {
+    opacity: 0.4;
+}
+.creative-carousal--hero .carousel-slider .swiper-slide .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.creative-carousal--hero .carousel-slider .swiper-slide .inner h2,
+.creative-carousal--hero .carousel-slider .swiper-slide .inner p {
+    width: 100%;
+    margin: 0; /* Elimina márgenes por defecto para centrar correctamente */
+    text-align: center; /* Asegura que el texto esté centrado si no ocupa todo el ancho */
+}
+.creative-carousal--hero .carousel-slider .swiper-slide.swiper-slide-active .inner {
+    opacity: 1;
+}
+.creative-carousal--hero .carousel-slider .swiper-slide .inner h2{
+    width: 100%;
+    float: left;
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.inner h2{
+    font-family: var(--font-main);
+}
+
+
+.creative-carousal--hero .carousel-slider .swiper-slide .inner a{
+    font-size: 19px;
+    color: #fff;
+    font-family: var(----font-main);
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+    text-decoration: none;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.creative-carousal--hero .carousel-slider .swiper-slide .inner a:hover{
+    text-decoration: none;
+    color: rgb(183, 183, 183);
+}
+.creative-carousal--hero .slide-progress {
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -110px;
+    z-index: 3;
+    text-align: center;
+}
+.creative-carousal--hero .slide-progress span {
+    display: inline-block;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 14px;
+}
+
+.creative-carousal--hero .slide-progress .swiper-pagination {
+    width: 100%; /* Cambio para permitir el ajuste dinámico */
+    max-width: 170px; /* Asegura que no exceda el ancho máximo deseado */
+    height: 2px;
+    margin: auto 10px;
+    display: inline-block;
+    position: static;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+.creative-carousal--hero .swiper-button-prev {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 39vw;
+    top: 66vh;
+    font-family: var(--font-main);
+    color: #fff;
+    background: none;
+}
+.creative-carousal--hero .swiper-button-prev:after{
+    display: none;
+}
+.creative-carousal--hero .swiper-button-next {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 45vw;
+    top: 66vh;
+    
+    color: #fff;
+    background: none;
+}
+.creative-carousal--hero .swiper-button-next:after{
+    display: none;
+}
+/* Asegurarse de que el contenedor de paginación sea visible y esté correctamente posicionado */
+
+
+/* Estilos para el relleno de la barra de progreso */
+
+
+.swiper-pagination-progressbar-fill {
+    background-color: #fff; /* Color de llenado de la barra de progreso */
+    height: 1px;
+    margin-left: 1.5vw;
+    width: 0%; /* Inicio sin llenado */
+    max-width: 11.1vw;
+    position: absolute;
+    left: 0; /* Asegura que el llenado comience desde la izquierda */
+    transition: width 0.3s ease; /* Transición suave del ancho */
+}
+
+
+
+
+/* ====================== Responsive Ipad =============================== */
+@media (max-width: 991px) {
+    .creative-carousal--hero .carousel-slider .swiper-slide .inner h2{
+               font-size: 7vw;
+        line-height: 7vw;
+        margin-bottom: 15px;
+    }
+}
+/* ====================== Responsive Iphone =============================== */
+@media screen and (max-width: 767px) {
+    .creative-carousal--hero .carousel-slider .swiper-slide .inner h2{
+        font-size: 12vw;
+        line-height: 12vw;
+        margin-bottom: 15px;
+    }
+    .creative-carousal--hero .swiper-button-prev{
+            left: 40px;
+    }
+    .creative-carousal--hero .swiper-button-next{
+            right: 40px;
+    }
+}

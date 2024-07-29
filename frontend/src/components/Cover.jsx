@@ -10,7 +10,7 @@ const Cover = () => {
       <div className="cover-container">
         <video className="videoTag" autoPlay loop muted>
           <source src={videoUrl} type="video/mp4" />
-          Tu navegador no soporta videos.
+          
         </video>
       </div>
     );

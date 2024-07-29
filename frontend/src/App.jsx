@@ -12,7 +12,7 @@ import FormContact from './pages/FormContact.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Home from './pages/Home.jsx';
 import MainConcept from './pages/MainConcept.jsx';
-import Ncpanel from './pages/Ncpanel.jsx';
+
 import PanelView from './pages/PanelView.jsx';
 import ProductDetails from './pages/ProductDetails.jsx';
 import Reviews from './pages/Reviews.jsx';
@@ -34,7 +34,6 @@ function App() {
         <Route path="/errorservice" element={<ErrorService />} />
         <Route path="/formcontact" element={<FormContact />} />
         <Route path="/gallery" element={<Gallery />} />        
-        <Route path="/ncpanel" element={<Ncpanel />} />
         <Route path="/panelview" element={<PanelView />} />
         <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/reviews" element={<Reviews />} />

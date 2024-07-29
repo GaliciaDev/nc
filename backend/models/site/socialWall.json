@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Facebook",
+        "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+        "logo": "https://img.icons8.com/material/480/facebook-new.png"
+    },
+   
+    {
+        "name": "Youtube",
+        "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+        "logo": "https://img.icons8.com/ios-glyphs/30/youtube-play.png"
+    },
+    {
+        "name": "Tik Tok",
+        "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+        "logo": "https://img.icons8.com/ios/50/000000/tiktok--v1.png"
+    },
+    {
+        "name": "Instagram",
+        "image": "https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg",
+        "logo": "https://img.icons8.com/material-outlined/384/instagram-new--v1.png"
+    }
+    
+    
+    
+    
+]
