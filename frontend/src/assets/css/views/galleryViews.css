@@ -1,0 +1,190 @@
+:root{
+    --widh-size: 30vw;
+    --heigh-size: 38vh;
+  }
+  
+  .site-container h2 {
+    padding-top: 14vh;
+    padding-left: 3vw;
+  }
+  
+  .view-gallery-component .view-heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+  }
+  
+  .view-gallery-component .view-gallery-image {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .view-gallery-component .view-gallery-image img {
+    height: var(--heigh-size);
+    width: var(--widh-size);
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .view-gallery-component .view-img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: var(--heigh-size);
+    width: var(--widh-size);
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  }
+  
+  .view-gallery-component .view-caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .view-gallery-component .view-transparent-box {
+    height: var(--heigh-size);
+    width: var(--widh-size);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-gallery-component .view-img-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .view-gallery-component .view-img-box:hover .view-transparent-box {
+    background-color: rgba(12, 13, 12, 0.304);
+  }
+  
+  .view-gallery-component .view-img-box:hover .view-caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .view-gallery-component .view-img-box:hover {
+    cursor: pointer;
+  }
+  
+  .view-gallery-component .view-caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .view-gallery-component .view-opacity-low {
+    opacity: 0.5;
+  }
+  
+  .view-gallery-component .view-caption {
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .view-gallery-component .view-caption > p {
+    margin: 0;
+    padding: 0;
+    margin-top: -2px;
+  }
+  
+  .view-gallery-component .view-caption > p:first-child {
+    margin-top: 0;
+  }
+  
+  .view-gallery-component .view-caption > p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .view-view-more a{
+    display: flex;
+    position: relative;
+    justify-content:flex-end;
+    text-decoration: none;
+    margin-top: -1vh;
+    margin-right: 4vw;
+    padding-bottom: 10vh;
+    color: var(--color-links);
+  }
+  
+  .view-view-more a:hover{
+    color: var(--color-hover-buttons);
+  }
+  
+  /* Cuando se expanden */
+  .expanded-image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ancho del contenedor */
+    height: 100%; /* Altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .contain__imgExpanded {
+    
+    position: relative;
+    width: 80%;
+    height: 80%;
+    /* Sombra con filter y drop shadow */
+    filter: drop-shadow(0 0 5px rgba(238, 237, 237, 0.563));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.688);
+  }
+  
+  .contain__imgExpanded img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+  
+  .close-icon {
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+    font-size: 25px;
+    /* Grosor */
+    font-weight: 500;
+    
+    
+    color: white;
+    cursor: pointer;
+  }
+  
+  .close-icon:hover {
+    color: var(--color-hover-buttons);
+  }
+  
+  
+  @keyframes expandAnimation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .contain__imgExpanded {
+    animation: expandAnimation .6s ease-out forwards;
+  }

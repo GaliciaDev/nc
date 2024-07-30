@@ -1,0 +1,19 @@
+{
+    "images": [
+      {
+        "id": 1,
+        "url": "",
+        "alt": "Imagen de portada 1"
+      },
+      {
+        "id": 2,
+        "url": "https://example.com/path/to/image2.jpg",
+        "alt": "Imagen de portada 2"
+      },
+      {
+        "id": 3,
+        "url": "https://example.com/path/to/image3.jpg",
+        "alt": "Imagen de portada 3"
+      }
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+    "galleryTitle": "Nuestra trayectoria",
+    "images": [
+      {
+        "IdGallery": 1,
+        "src": "https://i.ibb.co/89mYdDc/back02.jpg",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022",
+        "urlView": "/GalleryViews"
+      },
+      {
+        "IdGallery": 1,
+        "src": "https://i.ibb.co/BBD0nXY/back04.jpg",
+        "alt": "Another Image",
+        "caption": "Expo Mueble 2020",
+        "subCaption": "14/06/2020",
+        "urlView": "/GalleryViews"
+      },
+      {
+        "IdGallery": 1,
+        "src": "https://i.ibb.co/SPQbb0w/back01.png",
+        "alt": "Another Image",
+        "caption": "Expo Mueble 2019",
+        "subCaption": "17/12/2019",
+        "urlView": "/GalleryViews"
+      }
+      
+
+      
+      
+    ]
+  }

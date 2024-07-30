@@ -35,11 +35,11 @@ const MainConcept = () => {
                 <ul className={`mainConcept-nav-links ${isOpen ? "open" : ""}`}>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/home" className={getLinkClass("/home")} onClick={handleLinkClick}>Inicio</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/catalog" className={getLinkClass("/catalog")} onClick={handleLinkClick}>Catalogo</Link></li>
-                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/" className={getLinkClass("/aboutextend")} onClick={handleLinkClick}>Nosotros</Link></li>
+                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/aboutextend" className={getLinkClass("/aboutextend")} onClick={handleLinkClick}>Nosotros</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/" onClick={handleLinkClick}><img className="mainConcept-logo" src={CompanyLogo} alt="Logo" /></Link></li>
-                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/" className={getLinkClass("/gallery")} onClick={handleLinkClick}>Galeria</Link></li>
-                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/" className={getLinkClass("/formcontact")} onClick={handleLinkClick}>Contacto</Link></li>
-                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/" className={getLinkClass("/reviews")} onClick={handleLinkClick}>Reseñas</Link></li>
+                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/Gallery" className={getLinkClass("/gallery")} onClick={handleLinkClick}>Galeria</Link></li>
+                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/FormContact" className={getLinkClass("/formcontact")} onClick={handleLinkClick}>Contacto</Link></li>
+                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/reviews" className={getLinkClass("/reviews")} onClick={handleLinkClick}>Reseñas</Link></li>
                 </ul>
             </nav>
             

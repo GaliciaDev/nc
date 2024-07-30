@@ -1,0 +1,49 @@
+{
+    "galleryTitle": "Vista de galería completa",
+    "idCollection": "1",
+    "images": [
+      { 
+        "src": "https://i.ibb.co/nPjCxNy/back03.jpg",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      },
+      { 
+        "src": "https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      },
+      { 
+        "src": "https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      },
+      { 
+        "src": "https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      },
+      { 
+        "src": "https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      },
+      { 
+        "src": "https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&w=0&k=20&c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=",
+        "alt": "Library",
+        "caption": "Expo Mueble Invierno 2022",
+        "subCaption": "22/12/2022"
+      }
+      
+
+      
+      
+
+      
+      
+    ]
+  }

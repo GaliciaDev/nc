@@ -9,7 +9,8 @@ import ConctactWall from '../components/ConctactWall.jsx';
 import Products from '../components/Products.jsx';
 import Infodecoration from '../components/Infodecoraction.jsx';
 import SwiperWall from '../components/SwiperWall.jsx';
-import AddEvent from '../components/AddEvent.jsx';
+import SwiperCover from '../components/SwiperCover.jsx';
+
 
 // Importar el JSON de configuración de generacion de la pagina
 import config from '../config.json';
@@ -24,7 +25,8 @@ const componentMap = {
   SwiperWall: SwiperWall,
   SocialWall: SocialWall,
   ConctactWall: ConctactWall,
-  Infodecoration: Infodecoration
+  Infodecoration: Infodecoration,
+  SwiperCover: SwiperCover
 };
 
 const Home = () => {
@@ -41,6 +43,7 @@ const Home = () => {
     <div>
       
       {componentsToRender}
+      
       
     </div>
   );

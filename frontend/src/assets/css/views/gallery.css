@@ -1,0 +1,132 @@
+:root{
+  --widh-size: 30vw;
+  --heigh-size: 38vh;
+}
+
+.site-container h2 {
+    padding-top: 12vh;
+    padding-left: 3VW;
+}
+
+.gallery-component .heading {
+  text-align: center;
+  font-size: 2.0em;
+  letter-spacing: 1px;
+  padding: 40px;
+  color: white;
+}
+
+.gallery-component .gallery-image {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.gallery-component .gallery-image img {
+  height: var(--heigh-size);
+  width: var(--widh-size);
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+  
+}
+
+.gallery-component .img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: var(--heigh-size);
+  width: var(--widh-size);
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+    /* Sombra para que parezca que flota */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  /* Filtro para realzar que flota con dropshadow */
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+.gallery-component .caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-component .transparent-box {
+  height: var(--heigh-size);
+  width: var(--widh-size);
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-component .img-box:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-component .img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-component .img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.gallery-component .img-box:hover {
+  cursor: pointer;
+}
+
+.gallery-component .caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.gallery-component .opacity-low {
+  opacity: 0.5;
+}
+
+.gallery-component .caption {
+  position: absolute;
+  bottom: -5px; /* Ajusta este valor según sea necesario para mover los <p> más abajo */
+  left: 15px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-component .caption > p {
+  
+  margin: 0; /* Reduce la separación entre los <p> */
+  padding: 0; /* Asegura que no haya padding adicional */
+  margin-top: -2px;
+}
+
+
+
+
+
+.view-more a{
+  display: flex;
+  position: relative;
+  justify-content:flex-end;
+  text-decoration: none;
+  margin-top: -1vh;
+  margin-right: 4vw;
+  padding-bottom: 10vh;
+  color: var(--color-links);
+}
+
+.view-more a:hover{
+  color: var(--color-hover-buttons);
+  
+}
+

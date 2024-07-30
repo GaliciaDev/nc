@@ -17,15 +17,16 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import Reviews from './pages/Reviews.jsx';
 import SysEmail from './pages/SysEmail.jsx';
 import AddEvent from './components/AddEvent.jsx'; // Asegúrate de que la ruta sea correcta
+import GalleryViews from './pages/GalleryViews.jsx';
 
 function App() {
   const location = useLocation();
-  const [showAddEvent, setShowAddEvent] = useState(true);
+  const [showAddEvent, setShowAddEvent] = useState(false); /* Cambiar para mostrar o no */
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAddEvent(false);
-    }, 5000); // 5 segundos
+    }, 4000); // 5 segundos
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,7 +46,8 @@ function App() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/errorservice" element={<ErrorService />} />
             <Route path="/formcontact" element={<FormContact />} />
-            <Route path="/gallery" element={<Gallery />} />        
+            <Route path="/gallery" element={<Gallery />} /> 
+            <Route path="/galleryviews" element={<GalleryViews />} />
             <Route path="/panelview" element={<PanelView />} />
             <Route path="/productdetails" element={<ProductDetails />} />
             <Route path="/reviews" element={<Reviews />} />
