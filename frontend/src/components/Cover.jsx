@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/components/cover.css'
 import videoData from '../../../backend/models/site/imagesCover.json';
+/* https://cdn.pixabay.com/video/2024/05/16/212213_large.mp4 */
 
 const Cover = () => {
     // Accede a la URL del video desde el archivo JSON importado correctamente

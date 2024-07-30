@@ -1,5 +1,5 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
 import React, { useState } from 'react';
+import { Outlet, Link, useLocation } from "react-router-dom";
 import '../assets/css/views/MainConcept.css';
 import CompanyLogo from '../../../backend/assets/icons/settings/logo-nc-sin-fondo.png';
 
@@ -24,6 +24,9 @@ const MainConcept = () => {
     return (
         <div>
             <nav className="mainConcept-nav">
+                <div className={`logo-hiden ${isOpen ? "logo-hidden" : ""}`}>
+                    <img src={CompanyLogo} alt="Company Logo" />
+                </div>
                 <div className={`mainConcept-hamburger ${isOpen ? "mainConcept-toggle" : ""}`} onClick={toggleHamburger}>
                     <div className="line1"></div>
                     <div className="line2"></div>

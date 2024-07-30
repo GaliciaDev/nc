@@ -9,6 +9,7 @@ import ConctactWall from '../components/ConctactWall.jsx';
 import Products from '../components/Products.jsx';
 import Infodecoration from '../components/Infodecoraction.jsx';
 import SwiperWall from '../components/SwiperWall.jsx';
+import AddEvent from '../components/AddEvent.jsx';
 
 // Importar el JSON de configuración de generacion de la pagina
 import config from '../config.json';
@@ -38,8 +39,8 @@ const Home = () => {
 
   return (
     <div>
+      
       {componentsToRender}
-        
       
     </div>
   );

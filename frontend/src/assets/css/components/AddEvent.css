@@ -1,0 +1,146 @@
+
+/* Paleta de colores New Concept */
+:root {
+    --color-primary: #2C2A29;
+    --color-secondary: #F4F5F0;
+    --color-tertiary: #9B9A97;
+    --color-quaternary: #F96714;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(29, 29, 27);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para centrar la imagen en el centro de la pantalla */
+.page__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 6em;
+}
+
+.line {
+    height: 2px;
+    width: 20%;
+    background-color: var(--color-quaternary);
+    margin: 20px auto;
+    position: relative;
+}
+
+.socialWall-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.socialWall-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.socialWall-container a:hover, .socialWall-container a:focus {
+    transform: scale(1.1);
+}
+
+.logo__container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo__container:hover {
+    padding: 1em;
+}
+
+@keyframes palpitar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.explode {
+    animation: explode 0.9s forwards;
+}
+
+.logo__container img {
+    max-width: 100%;
+    height: auto;
+    animation: palpitar 2s ease-in-out infinite;
+}
+
+.info__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.info__container h1 {
+    color: var(--color-secondary);
+}
+
+.info__container p {
+    color: var(--color-tertiary);
+    font-style: italic;
+}
+
+.info__container img {
+    max-width: 50px;
+    margin: 10px;
+    filter: invert(1);
+}
+
+.logo__container.explode + .info__container {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .page__container {
+        padding: 4em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .page__container {
+        padding: 2em;
+    }
+}
