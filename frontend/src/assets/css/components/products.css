@@ -1,7 +1,4 @@
-/* Root de paletas de colores */
-.products-section{
-    
-}
+
 
 .products-section-title {
     /* Poner en cursiva */
@@ -31,10 +28,13 @@
     border-radius: 10px; */
 }
 .products-card {
+    
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: calc(33.333% - 60px);
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 22vw;
 }
 .products-card:hover {
     transform: translateY(-5px);
@@ -42,7 +42,7 @@
 
 .products-card img {
     width: 100%;
-    height: 100px;
+    height: 15vh;
     filter: brightness(90%);
     transition: transform 0.3s ease;
     /* dropshadow */
@@ -65,7 +65,7 @@
     
     font-family: var(--font-main);
     color: var(--color-contentBw); /* Subtitulo */
-    font-size: .9em;
+    font-size: 1.2em;
     margin-top: 1em;
 }
 .products-card-text {

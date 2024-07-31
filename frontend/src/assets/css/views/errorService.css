@@ -1,0 +1,31 @@
+@keyframes irradiate {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.812);
+      
+    }
+    50% {
+      opacity: 0.5;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}
+ 
+@keyframes irradiatetxt {
+    0%, 100% {
+      opacity: 1;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.812));
+    }
+    50% {
+      opacity: 0.5;
+      
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+}
+
+  .irradiate {
+    animation: irradiate 4s infinite;
+  }
+
+    .irradiatetxt {
+        animation: irradiatetxt 4s infinite;
+    }

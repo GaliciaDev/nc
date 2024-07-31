@@ -18,10 +18,11 @@ import Reviews from './pages/Reviews.jsx';
 import SysEmail from './pages/SysEmail.jsx';
 import AddEvent from './components/AddEvent.jsx'; // Asegúrate de que la ruta sea correcta
 import GalleryViews from './pages/GalleryViews.jsx';
+import Ncpanel from './pages/Ncpanel.jsx';
 
 function App() {
   const location = useLocation();
-  const [showAddEvent, setShowAddEvent] = useState(false); /* Cambiar para mostrar o no */
+  const [showAddEvent, setShowAddEvent] = useState(true); /* Cambiar para mostrar o no */
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,7 +38,7 @@ function App() {
         <AddEvent />
       ) : (
         <>
-          <MainConcept /> {/* Siempre muestra la barra de navegación */}
+          <MainConcept />
           <Routes>
             <Route path="/" element={<Home />} /> {/* Renderiza Home en la ruta raíz */}
             <Route path="/home" element={<Home />} />
@@ -52,7 +53,15 @@ function App() {
             <Route path="/productdetails" element={<ProductDetails />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/sysemail" element={<SysEmail />} />
+
+            {/* Manejo de error */}
           </Routes>
+
+          <Routes>
+            <Route path="*" element={<ErrorService />} />
+          </Routes>
+
+
         </>
       )}
     </div>
