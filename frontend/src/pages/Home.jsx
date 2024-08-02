@@ -12,8 +12,10 @@ import SwiperWall from '../components/SwiperWall.jsx';
 import SwiperCover from '../components/SwiperCover.jsx';
 
 
+
 // Importar el JSON de configuración de generacion de la pagina
 import config from '../config.json';
+
 
 
 // Mapeo de componentes a es donde se importan los componentes nuevos
@@ -41,9 +43,8 @@ const Home = () => {
 
   return (
     <div>
-      
+            
       {componentsToRender}
-      
       
     </div>
   );

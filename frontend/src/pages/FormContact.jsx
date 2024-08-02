@@ -1,9 +1,15 @@
 import Footer from "../components/Footer";
+import FormClients from "../components/FormClients.jsx";
 
 const FormContact= () => {
     return (
       <section>
-          <div className="bg-cover bg-center h-screen" style={{backgroundImage: 'url("https://i.ibb.co/89mYdDc/back02.jpg")'}}></div>
+          
+          <FormClients />
+          
+          
+
+          
           <Footer />
       </section>
     );

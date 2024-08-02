@@ -1,15 +1,13 @@
 import React from "react";
+import SectionInfo from "../components/SectionInfo.jsx";
+import CardsInfo from "../components/CardsInfo.jsx";
 import Footer from "../components/Footer";
 
 const AboutExtend= () => {
     return (
-      <section>
-          
-          
-
-          {/* inserta imagen con tailwind en pantalla completa */}
-          <div className="bg-cover bg-center h-screen" style={{backgroundImage: 'url("https://i.ibb.co/89mYdDc/back02.jpg")'}}></div>
-
+      <section>          
+          <SectionInfo />
+          <CardsInfo />  
           <Footer />
       </section>
     );

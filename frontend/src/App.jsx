@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import './App.css';
 import './assets/css/main.css';
+import './App.css';
 
 /* Contenedores de sitio */
 import AboutExtend from './pages/AboutExtend.jsx';
@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAddEvent(false);
-    }, 4000); // 5 segundos
+    }, 5000); // 5 segundos
 
     return () => clearTimeout(timer);
   }, []);
@@ -57,9 +57,7 @@ function App() {
             {/* Manejo de error */}
           </Routes>
 
-          <Routes>
-            <Route path="*" element={<ErrorService />} />
-          </Routes>
+          
 
 
         </>

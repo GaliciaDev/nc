@@ -125,22 +125,16 @@ body {
     pointer-events: all;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
 
-    .page__container {
-        padding: 4em;
+@media (max-width: 760px) {
+    .logo__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
     }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    .page__container {
-        padding: 2em;
+    .info__container img {
+        max-width: 30px;
     }
 }

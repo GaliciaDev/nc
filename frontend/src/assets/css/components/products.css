@@ -1,18 +1,14 @@
-
-
 .products-section-title {
-    /* Poner en cursiva */
     font-style: italic;
     padding: .5em 0;
     text-align: center;
     width: 100%;
     position: relative;
     font-size: 2rem;
-    color: var(--color-contentBw); /* Letras */
+    color: var(--color-contentBw);
     font-family: var(--font-main);
 }
 .products-container {
-    
     width: 90%;
     margin: 0 auto;
     margin-top: 2em;
@@ -23,78 +19,66 @@
     gap: 30px;
     justify-content: center;
     direction: ltr;
-    
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; */
 }
 .products-card {
-    
     border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    overflow: visible; /* Cambiado de hidden a visible */
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     padding-right: 2em;
     padding-left: 2em;
     width: 22vw;
+    opacity: 0;
+    transform: translateX(-20px);
 }
-.products-card:hover {
-    transform: translateY(-5px);
+.products-card.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
-
 .products-card img {
     width: 100%;
     height: 15vh;
     filter: brightness(90%);
-    transition: transform 0.3s ease;
-    /* dropshadow */
-    
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .products-card img:hover {
-    /* Hacer que la imagen brille */
-    filter: brightness(100%);
-    /* Sombras coquetas */
-    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.815));
-    
-    
+    transform: translateY(-10px);
+    filter: brightness(100%) drop-shadow(0 0 3px rgba(0, 0, 0, 0.815));
 }
 .products-card-body {
     padding: 10px;
     text-align: center;
 }
 .products-card-title {
-    
     font-family: var(--font-main);
-    color: var(--color-contentBw); /* Subtitulo */
+    color: var(--color-contentBw);
     font-size: 1.2em;
     margin-top: 1em;
 }
 .products-card-text {
-    color: var(--color-links); /* Subtitulo */
+    color: var(--color-links);
 }
-
-/* Media queries para diseño responsivo */
-@media (max-width: 1200px) {
-    .products-card {
-        width: calc(50% - 30px); /* 2 columnas */
-    }
+.products-card.visible-normal {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: var(--delay);
 }
-
 @media (max-width: 768px) {
+    .products-container {
+        width: 100%;
+        gap: 20px;
+    }
     .products-card {
-        width: calc(100% - 20px); /* 1 columna */
+        width: 60vw;
+        padding-right: 1em;
+        padding-left: 1em;
     }
-}
-
-@media (max-width: 480px) {
-    .products-section-title {
-        font-size: 1.5rem; /* Ajustar tamaño de fuente */
-    }
-
     .products-card img {
-        height: 80px; /* Ajustar altura de imagen */
+        height: 20vh;
     }
-
     .products-card-title {
-        font-size: 0.8em; /* Ajustar tamaño de fuente */
+        font-size: 1.1em;
+    }
+    .products-section-title {
+        font-size: 1.5rem;
     }
 }

@@ -16,7 +16,7 @@
     --color-hoverImg: brightness(0) saturate(100%) invert(51%) sepia(23%) saturate(7189%) hue-rotate(352deg) brightness(99%) contrast(98%);          /* Hover */            /* PANTONE 17-1353 TPX Apricot Orange */
     --ilumanate-hoverTxtimg: #fff;      /* Este c */
     --color-hoverTxtimg: #F96714;          /* Hover */            /* PANTONE 17-1353 TPX Apricot Orange */
-    --color-h2: #db6816ea;             /* Titulo */            /* PANTONE 17-1353 TPX Apricot Orange */
+    --color-h2: #db6816dc;             /* Titulo */            /* PANTONE 17-1353 TPX Apricot Orange */
     --color-hover-buttons: #F96714;       /* Cuardros */          /* PANTONE 17-1353 TPX Apricot Orange */
     --font-main: font-family: 'Helvetica Neue LT Pro', sans-serif;                                           
     
@@ -26,3 +26,10 @@
     --h3-font-size: 1.5rem;
     --p-font-size: .5rem;
 }
+
+.body{
+    
+    font-family: var(--font-main);
+    
+}
+

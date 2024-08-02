@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import '../assets/css/components/swiperwall.css';
 import slidesData from '../../../backend/models/site/swiperwall.json';
 
-const SwiperWall = () => {
+const SwiperWall = React.memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
-    const swiper = new Swiper('.carousel-slider', {
+    swiperRef.current = new Swiper('.carousel-slider', {
       spaceBetween: 0,
       slidesPerView: 3,
       centeredSlides: true,
@@ -43,14 +44,11 @@ const SwiperWall = () => {
         slideChange: function () {
           setCurrentIndex(this.realIndex);
         },
-        slideChange: function () {
-            setCurrentIndex(this.realIndex);
-          },
       },
     });
   }, []);
 
-  const fillPercentage = ((currentIndex + 1) / slidesData.length) * 100;
+  const fillPercentage = useMemo(() => ((currentIndex + 1) / slidesData.length) * 100, [currentIndex]);
 
   return (
     <section className="creative-carousal--hero">
@@ -66,15 +64,15 @@ const SwiperWall = () => {
           ))}
         </div>
         <div className="slide-progress">
-            <span>{"0"+slidesData[0].id}</span>
-            <div className="swiper-pagination swiper-pagination-progressbar">
+          <span>{"0" + slidesData[0].id}</span>
+          <div className="swiper-pagination swiper-pagination-progressbar">
             <span className="swiper-pagination-progressbar-fill" style={{ width: `${fillPercentage}%` }}></span>
-            </div>
-            <span>{"0"+slidesData[slidesData.length - 1].id}</span>
+          </div>
+          <span>{"0" + slidesData[slidesData.length - 1].id}</span>
         </div>
       </div>
     </section>
   );
-};
+});
 
 export default SwiperWall;

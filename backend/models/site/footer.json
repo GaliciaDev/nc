@@ -1,28 +1,28 @@
 {
   "direccion": {
-    "titulo": "Direccion",
+    "titulo": "Dirección",
     "detalle": "Colonia Blanco y Cuéllar CP: 44730, Guadalajara, Jal."
   },
   "atencionCliente": {
-    "titulo": "Atencion a cliente",
+    "titulo": "Atención a cliente",
     "detalle": "33 1603 2994"
   },
   "correos": {
     "titulo": "Correos",
     "detalle": "atencionaclientes@newconcept.com.mx"
   },
-  "footerText": "Creatividad e innovación, características inconfundibles del ADN new concept, que dan elegancia y distinción a tu hogar o proyecto.",
+  "footerText": "Creatividad e innovación, características inconfundibles del ADN New Concept, que dan elegancia y distinción a tu hogar o proyecto.",
   "menuSecciones": [
     "Inicio",
-    "Catalogo",
+    "Catálogo",
     "Nosotros",
-    "Galeria",
+    "Galería",
     "Contacto",
     "Reseñas"
   ],
   "subscripcion": {
     "titulo": "Suscríbete",
-    "descripcion": "Mantente al pendiente de nuestros nuevos diseños, sé el primero en verlos dentro de nuestra comunidad de correo",
+    "descripcion": "Mantente al pendiente de nuestros nuevos diseños, sé el primero en verlos dentro de nuestra comunidad de correo.",
     "aviso": "New Concept &copy; 2024, All Right Reserved"
   },
   "conocenosTexto": "Conocenos",
