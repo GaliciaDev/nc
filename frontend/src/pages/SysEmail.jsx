@@ -1,7 +1,9 @@
+import viewEmployees from '../components/ViewEmployees.jsx';
+
 const SysEmail= () => {
     return (
       <section>
-          <p>Contenedor SysEmail ACTIVO</p>
+          <ViewEmployees />
       </section>
     );
   };

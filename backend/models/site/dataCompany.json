@@ -1,0 +1,133 @@
+{
+    "dataEmployes": [
+        {
+            "id": 1,
+            "name": "Juan Garcia Morelos",
+            "profileImg": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "email": "sgassrciasm@newconcept.com.mx",
+            "password": "12342342",
+            "Area": 1
+        },
+        {
+            "id": 2,
+            "name": "Alejandro Reyes",
+            "profileImg": "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "email": "alejandro.reyes@newconcept.com.mx",
+            "password": "password",
+            "Area": 2
+        },
+        {
+            "id": 3,
+            "name": "Sofia Martinez",
+            "profileImg": "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "email": "sofia.martinez@newconcept.com.mx",
+            "password": "password",
+            "Area": 3
+        },
+        {
+            "id": 4,
+            "name": "Carlos Hernández",
+            "profileImg": "https://media.istockphoto.com/id/1394637422/es/foto/confiado-y-guapo-hombre-millennial-cauc%C3%A1sico-de-los-a%C3%B1os-30-hombre-de-negocios.jpg?s=1024x1024&w=is&k=20&c=s0wHxHmv8eSzTcnmFipLBAPqqj1ouLT2-nzguIlSy5Q=",
+            "email": "carlos.hernandez@newconcept.com.mx",
+            "password": "password",
+            "Area": 4
+        },
+        {
+            "id": 5,
+            "name": "Laura Jimenez",
+            "profileImg": "https://media.istockphoto.com/id/1185028215/es/foto/retrato-de-estudio-de-una-atractiva-profesora-sonriente-en-su%C3%A9ter-marr%C3%B3n-de-pie-con-los-brazos.jpg?s=1024x1024&w=is&k=20&c=U_HhVF6g6D5oDWkztma58Z-WXyWQqoBxP0hDZcDg_ms=",
+            "email": "laura.jimenez@newconcept.com.mx",
+            "password": "password",
+            "Area": 5
+        },
+        {
+            "id": 6,
+            "name": "Roberto Gomez",
+            "profileImg": "https://media.istockphoto.com/id/1501772352/es/foto/chico-indio-adulto-joven-positivo-grabando-video-en-un-tel%C3%A9fono-inteligente.jpg?s=1024x1024&w=is&k=20&c=femDe-nYhCEOhB4qPSsxIShVeJcLl60CleYaL0Q-2HY=",
+            "email": "roberto.gomez@newconcept.com.mx",
+            "password": "password",
+            "Area": 6
+        },
+        {
+            "id": 7,
+            "name": "Daniela Ruiz",
+            "profileImg": "https://media.istockphoto.com/id/1386479313/es/foto/feliz-mujer-de-negocios-afroamericana-millennial-posando-aislada-en-blanco.jpg?s=2048x2048&w=is&k=20&c=AVZP51f6LngIhk-BPEw_HEyog_EIMWuqUZNvZt_hRuY=",
+            "email": "daniela.ruiz@newconcept.com.mx",
+            "password": "password",
+            "Area": 7
+        },
+        {
+            "id": 8,
+            "name": "Sandra Árcangel Torres",
+            "profileImg": "https://media.istockphoto.com/id/1404289793/es/foto/retrato-de-cabeza-atractiva-dama-de-negocios-de-los-a%C3%B1os-30-posa-en-el-interior.jpg?s=1024x1024&w=is&k=20&c=Xs3QtXELKrMtOtI6r8fBXbWPr9zE8E_0xWI3grZy8X8=",
+            "email": "sandra.arca   @newconcept.com.mx",
+            "password": "password",
+            "Area": 8
+        },
+        {
+            "id": 9,
+            "name": "Isabel Castro",
+            "profileImg": "https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png",
+            "email": "isabel.castro@newconcept.com.mx",
+            "password": "password",
+            "Area": 12
+        }
+        ,
+        {
+            "id": 434,
+            "name": "Daniel Galicia Santos",
+            "profileImg": "https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png",
+            "email": "mydevgalicia@gmail.com",
+            "password": "pwdSegurazd",
+            "Area": 2
+        }
+    ],
+    "TypeStatus": [
+        {
+            "TypeId": 1,
+            "name": "CEO",
+            "specialty": "Director General"
+        },
+        {
+            "TypeId": 2,
+            "name": "IT",
+            "specialty": "Desarrollador"
+        },
+        {
+            "TypeId": 3,
+            "name": "Marketing",
+            "specialty": "Ventas"
+        },
+        {
+            "TypeId": 4,
+            "name": "RH",
+            "specialty": "Reclutamiento"
+        },
+        {
+            "TypeId": 5,
+            "name": "Produccion",
+            "specialty": "Operador"
+        },
+        {
+            "TypeId": 6,
+            "name": "Costura",
+            "specialty": "Pespunte"
+        },
+        {
+            "TypeId": 7,
+            "name": "Carpinteria",
+            "specialty": "Carpintero"
+        },
+        {
+            "TypeId": 8,
+            "name": "Diseño",
+            "specialty": "Diseñador"
+        },
+        {
+            "TypeId": 9,
+            "name": "Diseño",
+            "specialty": "Diseñador"
+        }
+        
+    ]
+}

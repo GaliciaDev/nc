@@ -1,6 +1,7 @@
 {
   
   "components": [
+    
     {
       "name": "Cover",
       "show": false,

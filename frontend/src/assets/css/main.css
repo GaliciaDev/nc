@@ -8,6 +8,7 @@
 :root{
     /* Paleta de colores */
     --color-backgroundApp: #242323;           /* Fondo */             /*PANTONE 19-4006 TPX Caviare  */
+    --color-backgroundAppW: #F4F5F0;
     --color-titleImgContainer: #F4F5F0;
     --color-contentBb: #F4F5F0;         /* Letras */            /* PANTONE 11-0601 TCX Bright White */
     --color-contentBw: #242323;
@@ -17,7 +18,10 @@
     --ilumanate-hoverTxtimg: #fff;      /* Este c */
     --color-hoverTxtimg: #F96714;          /* Hover */            /* PANTONE 17-1353 TPX Apricot Orange */
     --color-h2: #db6816dc;             /* Titulo */            /* PANTONE 17-1353 TPX Apricot Orange */
+    --color-navTools: rgba(24, 22, 22, 0.87);          /* Cuardros */          /* PANTONE 11-0601 TCX Bright White */
+    --color-navToolsEdit: rgba(24, 22, 22, 0.705);          /* Cuardros */          /* PANTONE 11-0601 TCX Bright White */
     --color-hover-buttons: #F96714;       /* Cuardros */          /* PANTONE 17-1353 TPX Apricot Orange */
+    --color-buttons: #f96814b9;          /* Cuardros */          /* PANTONE 17-1353 TPX Apricot Orange */
     --font-main: font-family: 'Helvetica Neue LT Pro', sans-serif;                                           
     
     /* Tamaño de fuentes */

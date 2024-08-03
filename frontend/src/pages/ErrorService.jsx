@@ -11,7 +11,7 @@ const ErrorService = () => {
   }, []);
 
   return (
-    <section className="flex items-center justify-center h-screen">
+    <section className="flex items-center justify-center h-screen bg-black">
       {/* Mensaje de error con letras blancas usando Tailwind */}
       <div className="flex flex-col items-center text-white text-center">
         <div className="flex flex-col space-y-6">

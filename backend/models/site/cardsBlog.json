@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "title": "Expo Muebles",
+      "description": "Lorem ipsum dolodddr sit amet consectetur adipisicing elit. Perspiciatis vero iste nostrum inventore minima sint exercitationem et, id necessitatibus incidunt deserunt itaque provident veritatis dolore laudantium, dicta assumenda! Fugiat, quo.",
+      "imageUrl": "https://via.placeholder.com/600x400"
+    },
+    {
+      "id": 2,
+      "title": "Event",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero iste nostrum inventore minima sint exercitationem et, id necessitatibus incidunt deserunt itaque provident veritatis dolore laudantium, dicta assumenda! Fugiat, quo.",
+      "imageUrl": "https://via.placeholder.com/600x400"
+    }
+  ]

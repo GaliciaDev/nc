@@ -1,0 +1,301 @@
+:root{
+    /* Definir color de fondo */
+    --bg-color: #f5f5f5;
+    --bg-color2: #ffbd15;
+}
+
+.dashContainer{
+    display: flex;
+    position: relative;
+    /* Cargar svg como fondo */
+    /* background-image: url(../img/back2.svg); */
+    background: linear-gradient(rgba(236, 133, 31, 0.747), rgba(28, 26, 26, 0.5)); /* Quitalo ALV */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.data__container{
+    
+    /* Fondo semi trasnparente con gradiente */
+    background: linear-gradient(rgb(255, 229, 200), rgb(255, 255, 255));
+    /* background: linear-gradient(rgba(255, 255, 255, 0.747), rgba(255, 255, 255, 0.5)), url(../img/back2.svg);  */
+    background-size: cover;
+    /* Sombras en los bordes */
+    box-shadow: 3px 9px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    height: 80%;
+}
+
+.title__container {
+    display: flex;
+    padding: 1em 1em 2em 1em;
+    justify-content: space-between; /* Asegura que el h2 y el div se separen */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+}
+
+.tSearch {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro de .tSearch */
+}
+
+.title__container h2{
+    margin: 0; /* Elimina los márgenes por defecto */
+    display: flex;
+    font-size: 25px; 
+    
+}
+
+.tSearch input {
+    border: 2px solid #f8f4f4a3;
+    border-radius: 10px;
+    /* sombras para que parezca que flota */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: #ffffff;
+    margin-right: 1em;
+    padding: 0.3em;
+    width: 300px;
+}
+.tSearch img{
+    position: fixed;
+    margin-left: 270px;
+    width: 16px;
+    height: 16px;
+    
+    cursor: pointer;
+}
+
+
+
+.databack__container
+{
+    border-radius: 0 0 20px 20px;
+    /* background: linear-gradient(rgba(48, 108, 186, 0.747), rgba(255, 255, 255, 0.5)); */
+    background: linear-gradient(rgba(236, 133, 31, 0.747), rgba(255, 255, 255, 0.5));
+    display: flex;
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    height: 68vh;
+    padding: 1em;
+}
+
+.acount__container{
+    display: flex;
+    
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.747), rgb(255, 255, 255));
+    box-shadow: 3px 9px 100px rgba(0, 0, 0, 0.2);
+}
+
+
+.acount__columns{
+    
+    display: grid;
+    grid-template-columns: 40px 2fr 2fr 1fr 1fr 1fr; /* Ajustado para mejor alineación */
+    text-align:start;
+    align-items: center;
+    
+    width: 100%;
+    gap: .5em;
+    padding-left: 1em;
+}
+
+
+.acount__columns p:hover {
+    transform: translateY(-2px);
+    transition: transform 0.5s;
+    cursor: pointer;
+    /* Color degradado para el p */
+    color: rgba(255, 166, 0, 0.904);
+}
+
+
+.employee{
+    display: grid;
+    grid-template-columns: 40px 2fr 2fr 1fr 1fr 1fr; /* Ajustado para mejor alineación */
+    text-align:start;
+    
+    align-items: center;
+    
+    width: 100%;
+    padding: 1em 0 1em 0;
+    padding-left: .4em;
+}
+
+
+
+
+
+.acount__columns p, .employee p {
+    margin: 0;
+    padding: 0 13px;
+    overflow: hidden;
+    text-overflow:clip;
+}
+
+.acount__columns p
+{
+    /* Alinear verticalmente  */
+    display: flex;
+    padding: 1em 0 1em 0;
+    /* poner en negritas */
+    font-weight: bold;
+}
+
+
+
+.acounts__rows {
+    background: linear-gradient(rgba(255, 255, 255, 0.747), rgb(255, 255, 255));
+    overflow-y: auto; /* Activa la barra de desplazamiento vertical cuando sea necesario */
+    max-height: 58vh; /* Establece una altura máxima */
+    display: flex;
+    flex-direction: column; /* Asegura que las filas se apilen verticalmente */
+    border-radius: 0 0 0 10px;
+}
+
+.acounts__rows .employee:hover {
+    transform: scale(99%); /* Agrandar la fila al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    
+   
+    
+    
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+.employee {
+    border-bottom: 1px solid #ccc; /* Add a divider line between rows */
+    transition: transform 0.2s ease; /* Add smooth transition effect */
+    
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.img-container {
+   width: 40px;
+   height: 40px;
+   
+   border-radius: 50%;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   /* Alinar todo el contenido al centro */
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+
+}
+
+.img-container img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+    
+}
+
+.acounts__rows:hover,
+.acounts__rows:focus-within {
+    overflow-y: auto; /* Muestra la barra de desplazamiento al pasar el mouse o enfocar dentro */
+}
+
+.decoration{
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+    color: white;
+    /* Sombra para darle profundidad */
+    height: 25px;
+    justify-items: center;
+    /* Hacer mas chiquita la letra */
+    font-size: .9em;
+    align-items: center;
+
+    
+
+
+}
+
+.pwd-container {
+    position: relative;
+    width: 88%;
+}
+.pwd-container img{
+    width: auto;
+    height: 15px;
+        
+}
+
+.pwd-container img:hover{
+    cursor: pointer;
+    /* Cambiar a color azul con filter*/
+    /* Filtro pero como este color  */
+    /* Filtro naranja */
+    filter: brightness(0) saturate(100%) invert(65%) sepia(69%) saturate(1568%) hue-rotate(355deg) brightness(100%) contrast(106%);
+
+    
+
+}
+
+.pwd {
+    margin-left: 1em;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* Barra */
+/* Estilizar la barra de desplazamiento para todos los navegadores */
+.acounts__rows::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+.acounts__rows::-webkit-scrollbar-track {
+    background: transparent; /* Color de fondo de la pista */
+}
+
+.acounts__rows::-webkit-scrollbar-thumb {
+    background: transparent; /* Color de fondo del pulgar */
+}
+
+.acounts__rows::-webkit-scrollbar-thumb:hover {
+    background: transparent; /* Color de fondo del pulgar al pasar el mouse */
+}
+
+/* Para Firefox */
+.acounts__rows {
+    scrollbar-width: thin; /* "auto" o "thin" */
+    scrollbar-color: transparent transparent; /* Color de la barra y el pulgar */
+}
+
+

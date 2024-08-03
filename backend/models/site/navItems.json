@@ -1,0 +1,74 @@
+[
+
+    {
+      "id": "1",
+      "type": "link",
+      "title": "Inicio",
+      "url": "/",
+      "imgSrc": "https://i.ibb.co/gPHspBJ/home.png",
+      "urlEdition": "/HomeExtend.js"
+    },
+    {
+      "id": "2",
+      "type": "link",
+      "title": "Catalogo",
+      "url": "/Catalog",
+      "imgSrc": "https://i.ibb.co/ySbV64W/catalog.png",
+      "urlEdition": "/CatalogExtend"
+    },
+  
+    {
+      "id": "4",
+      "type": "link",
+      "title": "Nosotros",
+      "url": "/AboutExtend.js",
+      "imgSrc": "https://i.ibb.co/VtRs4p7/about.png",
+      "urlEdition": "/AboutExtend"
+    },
+    
+    
+    {
+      "type": "logo",
+      "title": "Logo",
+      "url": "/",
+      "imgSrc": "https://i.ibb.co/3dMDTtd/nc.png"
+  
+    },
+  
+    {
+      "id": "5",
+      "type": "link",
+      "title": "Galeria",
+      "url": "/Gallery.js",
+      "imgSrc": "https://i.ibb.co/37m4Nvr/gallery.png",
+      "urlEdition": "/GalleryExtend"
+    },
+    {
+      "id": "6",
+      "type": "link",
+      "title": "Contacto",
+      "url": "/Conctac.js",
+      "imgSrc": "https://i.ibb.co/fXbst0b/contact.png",
+      "urlEdition": "/ContactExtend"
+    },
+    {
+        "id": "7",
+        "type": "link",
+        "title": "Blog",
+        "url": "/reviews",
+        "imgSrc": "https://i.ibb.co/SXR3mQY/blog.png",
+        "urlEdition": "/reviews"
+      },
+    {
+      "type": "sn",
+      "title": "",
+      "url": "https://www.facebook.com",
+      "imgSrc": "https://i.ibb.co/0GtQzH0/snF.png"
+    },
+    {
+      "type": "sn",
+      "title": "",
+      "url": "https://www.instagram.com",
+      "imgSrc": "https://i.ibb.co/PNKTGnp/snI.png"
+    }
+  ]
