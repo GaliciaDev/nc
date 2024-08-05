@@ -1,0 +1,12 @@
+/* Animaciones */
+
+.container__measure {
+  /* Dropshadow para que parezca que esta flotando */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.drop_efect {
+ filter: drop-shadow(0 0 0.4rem #0c0c0cb9); 
+}
+

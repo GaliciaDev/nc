@@ -1,0 +1,74 @@
+{
+    "categorias": {
+      "3-2-1": [
+        {
+          "id": 1,
+          "nombre": "Nibe",
+          "Descontinuado": false,
+          "imagen": "ruta/a/la/imagen.jpg",
+          "dimensiones": {
+            "largo": 0,
+            "largo_asiento": 0,
+            "fondo": 0,
+            "fondo_asiento": 0,
+            "ancho_brazo": 0,
+            "ancho_respaldo": 0,
+            "altura": 0,
+            "altura_casco": 0,
+            "altura_brazo": 0,
+            "altura_asiento": 0,
+            "altura_pata": 0,
+            "altura_respaldo": 0
+          },
+          "peso": 0,
+          "descripcion": "Un cómodo sofá de tres plazas.",
+          "materiales": ["madera", "tela", "espuma"],
+          "color": "gris",
+          "precioVenta": 500,
+          "precioFabricacion": 100,
+          "stock": 10,
+          "fecha_fabricacion": "2023-10-01",
+          "proveedor": "Proveedor XYZ",
+          "garantia": 2,
+          "comentarios": "Disponible en otros colores bajo pedido."
+        }
+      ],
+      "esquineras": [
+        {
+            "id": 2,
+            "nombre": "Nibe 2.0",
+            "Descontinuado": false,
+            "imagen": "ruta/a/la/imagen.jpg",
+            "dimensiones": {
+              "largo": 5,
+              "largo_asiento": 10,
+              "fondo": 20,
+              "fondo_asiento": 30,
+              "ancho_brazo": 40,
+              "ancho_respaldo": 50,
+              "altura": 60,
+              "altura_casco": 50,
+              "altura_brazo": 60,
+              "altura_asiento": 45,
+              "altura_pata": 20,
+              "altura_respaldo": 55
+            },
+            "peso": 10,
+            "descripcion": "Un cómodo sofá de tres plazas.",
+            "materiales": ["madera", "tela", "espuma"],
+            "color": "gris",
+            "precioVenta": 500,
+            "precioFabricacion": 100,
+            "stock": 10,
+            "fecha_fabricacion": "2023-10-01",
+            "proveedor": "Proveedor XYZ",
+            "garantia": 2,
+            "comentarios": "Disponible en otros colores bajo pedido."
+          }
+      ],
+      "nc": [],
+      "sofas": [],
+      "camas": [],
+      "sillones": []
+    }
+  }

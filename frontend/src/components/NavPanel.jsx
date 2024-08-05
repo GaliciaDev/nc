@@ -25,7 +25,7 @@ const NavPanel = () => {
                 <div className={`w-full md:block md:w-auto ${isDropdownOpen ? 'block' : 'hidden'}`} id="navbar-dropdown">
                     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ml-auto">
                         <li>
-                            <a href="/index.js" className="block mt-1 text-white rounded text-lg hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-[var(--color-h2)] md:p-0 dark:text-white md:dark:hover:text-[var(--color-h2)] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{user.name}</a>
+                            <a href="/" className="block mt-1 text-white rounded text-lg hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-[var(--color-h2)] md:p-0 dark:text-white md:dark:hover:text-[var(--color-h2)] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{user.name}</a>
                         </li>
                         <li>
                             <img className="bg-white p-[.1em] h-10 w-10 rounded-full" src={UserImg} alt="Perfil del usuario" />

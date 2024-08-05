@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Outlet, Link, useLocation } from "react-router-dom";
 import '../assets/css/views/MainConcept.css';
 import CompanyLogo from '../../../backend/assets/icons/settings/logo-nc-sin-fondo.png';
+import LoginLogo from '../../../backend/assets/icons/navegation/login.png'; 
 
 const MainConcept = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,7 @@ const MainConcept = () => {
                     <div className="line3"></div>
                 </div>
                 <ul className={`mainConcept-nav-links ${isOpen ? "open" : ""}`}>
+                <li className={`${isOpen ? "fade" : ""}`}><Link to="/reviews" className={getLinkClass("/")} onClick={handleLinkClick}></Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/home" className={getLinkClass("/home")} onClick={handleLinkClick}>Inicio</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/catalog" className={getLinkClass("/catalog")} onClick={handleLinkClick}>Catálogo</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/aboutextend" className={getLinkClass("/aboutextend")} onClick={handleLinkClick}>Nosotros</Link></li>
@@ -58,6 +60,8 @@ const MainConcept = () => {
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/Gallery" className={getLinkClass("/gallery")} onClick={handleLinkClick}>Galería</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/FormContact" className={getLinkClass("/formcontact")} onClick={handleLinkClick}>Contacto</Link></li>
                     <li className={`${isOpen ? "fade" : ""}`}><Link to="/reviews" className={getLinkClass("/reviews")} onClick={handleLinkClick}>Blog</Link></li>
+                    <li className={`${isOpen ? "fade" : ""}`}><Link to="/" className={getLinkClass("/login")} onClick={handleLinkClick}>Ingresar</Link></li>
+                    
                 </ul>
             </nav>
              

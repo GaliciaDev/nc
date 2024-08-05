@@ -19,6 +19,7 @@ import SysEmail from './pages/SysEmail.jsx';
 import GalleryViews from './pages/GalleryViews.jsx';
 import Ncpanel from './pages/Ncpanel.jsx';
 import AddEvent from './components/AddEvent.jsx'; // Importar AddEvent
+import AddProducts from './pages/AddProducts.jsx';
 
 function App() {
   const [showAddEvent, setShowAddEvent] = useState(false);
@@ -53,6 +54,7 @@ function App() {
         <Route path="/sysemail" element={<SysEmail />} />
         <Route path="*" element={<ErrorService />} />
         <Route path="/ncpanel" element={<Ncpanel />} />
+        <Route path="/addproducts" element={<AddProducts />} />
       </Routes>
     </div>
   );
