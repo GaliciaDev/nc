@@ -20,6 +20,9 @@ import GalleryViews from './pages/GalleryViews.jsx';
 import Ncpanel from './pages/Ncpanel.jsx';
 import AddEvent from './components/AddEvent.jsx'; // Importar AddEvent
 import AddProducts from './pages/AddProducts.jsx';
+import FormMeasure from './pages/FormMeasure.jsx';
+import ContactEdit from './pages/ContactEdit.jsx';
+import SeoEdit from './pages/SeoEdit.jsx';
 
 function App() {
   const [showAddEvent, setShowAddEvent] = useState(false);
@@ -55,6 +58,10 @@ function App() {
         <Route path="*" element={<ErrorService />} />
         <Route path="/ncpanel" element={<Ncpanel />} />
         <Route path="/addproducts" element={<AddProducts />} />
+        <Route path="/FormMeasure" element={<FormMeasure />} />
+        <Route path="/contactedit" element={<ContactEdit />} />
+        <Route path="/seoedit" element={<SeoEdit />} />
+
       </Routes>
     </div>
   );

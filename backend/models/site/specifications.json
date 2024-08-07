@@ -1,0 +1,9 @@
+{
+    "specifications": [
+      { "label": "Medidas", "values": ["Largo", "Length", "Fondo", "Width", "Altura", "High", "Peso", "Weight"] },
+      { "label": "Measure", "values": ["[mts.]", "[in.]", "[mts.]", "[in.]", "[mts.]", "[in.]", "[mts.]", "[in.]"] },
+      { "label": "Sofa", "values": ["2", "78.74", "0.90", "35.43", "0.80", "31.49", "0.00", "0.00"] },
+      { "label": "Respaldo", "values": ["0.00", "0.00", "0.00", "0.00", "0.00", "0.00", "0.00", "0.00"] },
+      { "label": "Frente", "values": ["0.00", "0.00", "0.00", "0.00", "0.00", "0.00", "0.00", "0.00"] }
+    ]
+  }

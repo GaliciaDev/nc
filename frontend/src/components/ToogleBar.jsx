@@ -13,10 +13,10 @@ const ToogleBar = () => {
           <a href="/addproducts" className="p-0 w-full h-full flex justify-center items-center">PRODUCTOS</a>
         </div>
         <div className="tools__menu flex justify-center items-center">
-          <a href="#" className="p-0 w-full h-full flex justify-center items-center">CONTACTO</a>
+          <a href="/contactedit" className="p-0 w-full h-full flex justify-center items-center">CONTACTO</a>
         </div>
         <div className="tools__menu flex justify-center items-center">
-          <a href="#" className="p-0 w-full h-full flex justify-center items-center">SEO</a>
+          <a href="seoedit" className="p-0 w-full h-full flex justify-center items-center">SEO</a>
         </div>
       </div>
     </div>

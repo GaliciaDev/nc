@@ -3,17 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../assets/css/views/productDetails.css';
 import Footer from '../components/Footer.jsx';
+import MainConcept from './MainConcept.jsx';
+import ProductSpecifications from '../components/ProductSpecifications.jsx';
+
 
 const Carousel = () => {
   const images = [
     { src: 'https://i.ibb.co/fFvyPkJ/struer-2.jpg', alt: 'Main' },
     { src: 'https://i.ibb.co/VT1dzF7/struer-1.jpg', alt: 'Left' },
     { src: 'https://i.ibb.co/fFvyPkJ/struer-2.jpg', alt: 'Right' },
-    
   ];
 
   return (
     <div>
+      <MainConcept />
       <div className="product-details__container">
         <div className='details__container'>
           <div className='data-product'>
@@ -71,59 +74,9 @@ const Carousel = () => {
                   </div>
                 </div>
               </div>
-              <div className="details-view-products__container">
-                <div className="specifics-product-grid">
-                  <div>Medidas</div>
-                  <div>Largo</div>
-                  <div>Length</div>
-                  <div>Fondo</div>
-                  <div>Width</div>
-                  <div>Altura</div>
-                  <div>High</div>
-                  <div>Peso</div>
-                  <div>Weight</div>
-                  <div>Measure</div>
-                  <div>[mts.]</div>
-                  <div>[in.]</div>
-                  <div>[mts.]</div>
-                  <div>[in.]</div>
-                  <div>[mts.]</div>
-                  <div>[in.]</div>
-                  <div>[mts.]</div>
-                  <div>[in.]</div>
-                  <div>Sofa</div>
-                  <div>2</div>
-                  <div>78.74</div>
-                  <div>0.90</div>
-                  <div>35.43</div>
-                  <div>0.80</div>
-                  <div>31.49</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>Respaldo</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>Frente</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                  <div>0.00</div>
-                </div>
-                <div className='button-details__container'>
-                  <a href='/' className='button-data'><span></span>Ficha Tecnica</a>
-                  <a href='/' className='button-cost'>Cotizar</a>
-                </div>
-              </div>
+              {/* Aqui va la tabla de medidas */}
+              <ProductSpecifications />
+              
             </div>   
           </div>
         </div>
