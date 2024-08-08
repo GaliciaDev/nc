@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/components/productSpecifications.css';
 import specificationsData from '../../../backend/models/site/specifications.json';
+import { useModal } from '../context/ModalContext.jsx';
+
 
 const ProductSpecifications = () => {
   const [specifications, setSpecifications] = useState([]);
@@ -9,6 +11,8 @@ const ProductSpecifications = () => {
     // Simulamos la carga de datos desde un archivo JSON
     setSpecifications(specificationsData.specifications);
   }, []);
+
+  const { openModal } = useModal();
 
   return (
     <div className="details-view-products__container">
@@ -23,9 +27,12 @@ const ProductSpecifications = () => {
         ))}
       </div>
       <div className='button-details__container'>
-        <a href='/' className='button-data'><span></span>Ficha Tecnica</a>
-        <a href='/' className='button-cost'>Cotizar</a>
+        <a href='#' onClick={openModal.form} className='button-data'><span></span>Ficha Tecnica</a>
+                
+
       </div>
+
+      
     </div>
   );
 };

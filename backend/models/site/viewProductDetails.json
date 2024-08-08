@@ -1,0 +1,10 @@
+{
+    "imgMain": { "src": "https://i.ibb.co/x366td7/nibe-2.jpg", "alt": "Main" },
+    "imgLeft": { "src": "https://i.ibb.co/S7h66LP/nibe-3.jpg", "alt": "Left" },
+    "imgRight": { "src": "https://i.ibb.co/RQgqVds/nibe-1.jpg", "alt": "Right" },
+    "additionalImages": [
+      { "src": "https://fl-1.cdn.flockler.com/embed/no-image.svg", "alt": "Additional 1" },
+      { "src": "https://fl-1.cdn.flockler.com/embed/no-image.svg", "alt": "Additional 2" }
+      
+    ]
+  }
