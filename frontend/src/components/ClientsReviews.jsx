@@ -3,10 +3,10 @@ import reviews from '../../../backend/models/site/cardsBlog.json'; // Asegúrate
 
 const ClientsReviews = () => {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-gray-100 p-20">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-gray-100 p-3">
       {reviews.map(review => (
-        <div key={review.id} className="flex flex-col md:flex-row w-full min-h-[50vh] md:h-[50vh] m-4 md:m-20 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="w-full md:w-1/2 h-64 md:h-auto">
+        <div key={review.id} className="flex flex-col md:flex-row w-full md:w-5/6 lg:w-2/3 md:h-[50vh] mt-[8vh]  bg-white shadow-lg rounded-lg overflow-hidden p-2 md:mt-2vh">
+          <div className="w-full md:w-2/5 h-80 md:h-auto">
             <img 
               className="object-cover w-full h-full" 
               src={review.imageUrl} 

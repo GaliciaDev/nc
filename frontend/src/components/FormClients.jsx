@@ -6,19 +6,19 @@ const FormClients = () => {
         {/* rectangulo que abarque todo el ancho con tailwind */}
         
 
-        <div class=" pt-20 pb-20 pl-8 pr-8">
-        <div class="mt-6">
+        <div className=" pt-20 pb-20 pl-8 pr-8">
+        <div className="mt-6">
             
-            <div class="grid sm:grid-cols-3 items-start gap-14 p-10  mx-auto max-w-8xl bg-[white] rounded-md shadow-[0_2px_20px_2px_rgba(0,0,0,0.6)] rounded-md">
+            <div className="grid sm:grid-cols-3 items-start gap-14 p-10  mx-auto max-w-8xl bg-[white] rounded-md shadow-[0_2px_20px_2px_rgba(0,0,0,0.6)] rounded-md">
                 <div>
-                    <h1 class="text-[var(--color-hover-buttons)] text-3xl ">Contactanos</h1>
-                    <p class="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem quos? Quibusdam eum molestias nobis soluta voluptatum, dignissimos rerum quas officia ipsam sit dicta maiores blanditiis voluptas ut adipisci illum!</p>
+                    <h1 className="text-[var(--color-hover-buttons)] text-3xl ">Contactanos</h1>
+                    <p className="text-sm text-gray-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem quos? Quibusdam eum molestias nobis soluta voluptatum, dignissimos rerum quas officia ipsam sit dicta maiores blanditiis voluptas ut adipisci illum!</p>
 
-                    <div class="mt-12">
-                        <h2 class="text-[var(--color-hover-buttons)] text-base font-bold">Email</h2>
-                        <ul class="mt-4">
-                            <li class="flex items-center">
-                                <div class="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <div className="mt-12 md:block hidden">
+                        <h2 className="text-[var(--color-hover-buttons)] text-base font-bold">Email</h2>
+                        <ul className="mt-4">
+                            <li className="flex items-center">
+                                <div className="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='black'
                                         viewBox="0 0 479.058 479.058">
                                         <path
@@ -26,19 +26,19 @@ const FormClients = () => {
                                             data-original="#000000" />
                                     </svg>
                                 </div>
-                                <a href="javascript:void(0)" class="text-black text-sm ml-4">
-                                    <small class="block">Atencion a clientes</small>
+                                <a href="javascript:void(0)" className="text-black text-sm ml-4">
+                                    <small className="block">Atencion a clientes</small>
                                     <strong>atencionaclientes@</strong>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="mt-12">
-                        <h2 class="text-[var(--color-hover-buttons)] text-base font-bold">Redes Sociales</h2>
+                    <div className="mt-12 md:block hidden">
+                        <h2 className="text-[var(--color-hover-buttons)] text-base font-bold ">Redes Sociales</h2>
 
-                        <ul class="flex mt-4 space-x-4">
-                            <li class="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                        <ul className="flex mt-4 space-x-4">
+                            <li className="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0 ">
                                 <a href="javascript:void(0)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='black'
                                         viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ const FormClients = () => {
                                 </a>
                             </li>
                             
-                            <li class="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li className="bg-[#e9e6e6] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="javascript:void(0)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='black'
                                         viewBox="0 0 24 24">
@@ -63,26 +63,26 @@ const FormClients = () => {
                     </div>
                 </div>
                 
-                <form class="ml-auo space-y-4">
+                <form className="ml-auo space-y-4">
                     
                     <input type='text' placeholder='Nombre'
                     
-                        class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
+                        className="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
                         
                     <input type='email' placeholder='Correo'
-                        class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
+                        className="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
                     <input type='text' placeholder='Telefono'
-                        class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
+                        className="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-[var(--color-hover-buttons)]" />
                     <textarea placeholder='Mensaje' rows="6"
-                        class="w-full text-gray-800 rounded-md px-4 border text-sm pt-2.5 outline-[var(--color-hover-buttons)]"></textarea>
+                        className="w-full text-gray-800 rounded-md px-4 border text-sm pt-2.5 outline-[var(--color-hover-buttons)]"></textarea>
                     <button type='button'
-                        class="text-white bg-[var(--color-h2)] hover:bg-[var(--color-hover-buttons)] rounded-md text-sm px-4 py-3 w-full !mt-6 ">Enviar</button>
+                        className="text-white bg-[var(--color-h2)] hover:bg-[var(--color-hover-buttons)] rounded-md text-sm px-4 py-3 w-full !mt-6 ">Enviar</button>
                 </form>
                
-                <div class="z-10 relative h-full max-md:min-h-[200px]">
+                <div className="z-10 relative h-full max-md:min-h-[200px]">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465.55557322101686!2d-103.3002344424214!3d20.68005235455825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b164176ae483%3A0xb42c93f2823d1db3!2sNew%20Concept!5e0!3m2!1sen!2smx!4v1722524310006!5m2!1sen!2smx"
-                    class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0"
-                    allowfullscreen></iframe>
+                    className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0"
+                    ></iframe>
             </div>
             </div>
         </div>

@@ -23,14 +23,15 @@ import AddProducts from './pages/AddProducts.jsx';
 import FormMeasure from './pages/FormMeasure.jsx';
 import ContactEdit from './pages/ContactEdit.jsx';
 import SeoEdit from './pages/SeoEdit.jsx';
+import TestViews from './pages/TestViews.jsx';
 
 function App() {
-  const [showAddEvent, setShowAddEvent] = useState(false);
+  const [showAddEvent, setShowAddEvent] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAddEvent(false);
-    }, 3000); // 3 segundos
+    }, 60000); // 5 segundos
 
     return () => clearTimeout(timer);
   }, []);
@@ -61,6 +62,7 @@ function App() {
         <Route path="/FormMeasure" element={<FormMeasure />} />
         <Route path="/contactedit" element={<ContactEdit />} />
         <Route path="/seoedit" element={<SeoEdit />} />
+        <Route path="/testviews" element={<TestViews />} />
 
       </Routes>
     </div>

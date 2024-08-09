@@ -1,0 +1,122 @@
+:root {
+    --peak: 20em; /* Pico o altura máxima de la trayectoria */
+    --fractions: 10; /* Número de fracciones en las que se divide el ancho */
+    --jump-width: 100vw; /* Ancho total de los saltos */
+}
+
+@keyframes continuousJump {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 1), calc(var(--peak) * -1));
+        border-radius: 2em;
+    }
+    20% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 2), 0);
+    }
+    30% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 3), calc(var(--peak) * -1));
+    }
+    40% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 4), 0);
+    }
+    50% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 5), calc(var(--peak) * -1));
+    }
+    60% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 6), 0);
+        
+    }
+    70% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 7), calc(var(--peak) * -1));
+    }
+    80% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 8), 0);
+    }
+    90% {
+        transform: translate(calc(var(--jump-width) / var(--fractions) * 9), calc(var(--peak) * -1));
+    }
+    100% {
+        transform: translate(var(--jump-width), 0);
+    }
+}
+
+@keyframes trailEffect {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(249, 103, 20, 0.5);
+    }
+}
+
+.form {
+    width: 7em;
+    height: 7em;
+    background-color: #F96714;
+    position: absolute;
+    box-shadow: 0 0 10px #10100f;
+    border-radius: 2px;
+    
+}
+
+.form:hover {
+    transform: scale(.5);
+}
+
+.squareF, .squareM, .squareE {
+    animation: continuousJump 4.8s cubic-bezier(0.42, 0, 0.58, 1) infinite,
+               trailEffect 3.8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.squareF {
+    animation-delay: 0s, 0s;
+    
+}
+
+.squareM {
+    animation-delay: 0.4s, 0.4s; /* Desfase de 0.4 segundos */
+    margin-right: 20em;
+}
+
+.squareE {
+    animation-delay: 0.8s, 0.8s; /* Desfase de 0.8 segundos */
+    margin-right: 20em;
+    margin-left: -20em;
+}
+
+.backElements {
+    display: flex;
+    height: 90vh;
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #9e9c9b;
+}
+
+.nc__logo {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    justify-content: baseline;
+    filter: drop-shadow(0 0 55px #010101);
+    margin: 1em;
+}
+
+.squares__container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+}
+
+.progressBar {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 6vh;
+    margin-right: 2vw;
+    color : #FFFFFF;
+}
+

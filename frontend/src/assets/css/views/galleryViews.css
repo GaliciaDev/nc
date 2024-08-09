@@ -188,3 +188,10 @@
   .contain__imgExpanded {
     animation: expandAnimation .6s ease-out forwards;
   }
+
+  @media screen and (max-width: 768px) {
+    :root{
+      --widh-size: 90vw;
+      --heigh-size: 50vh;
+    }
+  }

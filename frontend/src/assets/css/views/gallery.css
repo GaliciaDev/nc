@@ -130,3 +130,28 @@
   
 }
 
+@media (max-width: 768px){
+
+
+  .gallery-component .gallery-image {
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+  }
+
+  .gallery-component .img-box {
+    width: 80vw; /* Ajusta el ancho según sea necesario */
+    height: 100%; /* Ajusta la altura automáticamente */
+  }
+
+  .gallery-component .gallery-image img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura automáticamente */
+  }
+
+  
+ 
+  
+  }
