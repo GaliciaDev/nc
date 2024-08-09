@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowAddEvent(false);
-    }, 60000); // 5 segundos
+    }, 2000); // 5 segundos
 
     return () => clearTimeout(timer);
   }, []);

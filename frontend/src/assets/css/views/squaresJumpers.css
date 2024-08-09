@@ -4,6 +4,13 @@
     --jump-width: 100vw; /* Ancho total de los saltos */
 }
 
+.jumpersq__container {
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+    position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
+    width: 100vw; /* Asegura que el contenedor ocupe todo el ancho de la ventana */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
 @keyframes continuousJump {
     0% {
         transform: translate(0, 0);
@@ -26,7 +33,6 @@
     }
     60% {
         transform: translate(calc(var(--jump-width) / var(--fractions) * 6), 0);
-        
     }
     70% {
         transform: translate(calc(var(--jump-width) / var(--fractions) * 7), calc(var(--peak) * -1));
@@ -38,7 +44,7 @@
         transform: translate(calc(var(--jump-width) / var(--fractions) * 9), calc(var(--peak) * -1));
     }
     100% {
-        transform: translate(var(--jump-width), 0);
+        transform: translate(calc(var(--jump-width) - 7em), 0); /* Ajusta el ancho del salto para evitar desbordamiento */
     }
 }
 
@@ -58,7 +64,6 @@
     position: absolute;
     box-shadow: 0 0 10px #10100f;
     border-radius: 2px;
-    
 }
 
 .form:hover {
@@ -72,7 +77,6 @@
 
 .squareF {
     animation-delay: 0s, 0s;
-    
 }
 
 .squareM {
@@ -90,8 +94,6 @@
     display: flex;
     height: 90vh;
     width: 95%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #9e9c9b;
 }
 
 .nc__logo {
@@ -110,13 +112,24 @@
     top: 50%;
 }
 
-.progressBar {
+#spinner {
     display: flex;
     align-self: flex-end;
     position: absolute;
     bottom: 0;
-    margin-bottom: 6vh;
-    margin-right: 2vw;
-    color : #FFFFFF;
+    right: 0; 
+    transform: translate(-50%, -50%);
+    width: 120px;
 }
 
+.loaging-text {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    right: 9vw;
+    bottom: 0;
+    margin-bottom: 11vh;
+    font-size: 1.3em;
+    color: #ffffff;
+    font-weight: bold;
+}
