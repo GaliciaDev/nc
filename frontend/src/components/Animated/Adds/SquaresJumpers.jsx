@@ -66,12 +66,15 @@ const SquaresJumpers = () => {
                     <div className="form squareF"></div>
                     <div className="form squareM"></div>
                     <div className="form squareE"></div>
-                </div>               
+                </div> 
+
+                <p className='loaging-text  mr-4 irradiatetxt'>CARGANDO</p>
+                <canvas className='irradiatetxt'  id="spinner" width="300" height="300"></canvas>
+                               
             </div>
 
                 
-                <p className='loaging-text  mr-4 irradiatetxt'>CARGANDO</p>
-                <canvas className='irradiatetxt'  id="spinner" width="300" height="300"></canvas> 
+                
                 
         </div>
     );

@@ -90,10 +90,24 @@
     margin-left: -20em;
 }
 
+@keyframes loadingMoveRight {
+    0% {
+        transform: translateX(-100vw); /* Comienza fuera de la vista a la izquierda */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
+
 .backElements {
     display: flex;
+    position: relative;
     height: 90vh;
     width: 95%;
+    animation: loadingMoveRight 5s ease-out; /* Aplica la animación */
+    border-radius: 15px;
+    /* box shadow */
+    
 }
 
 .nc__logo {
