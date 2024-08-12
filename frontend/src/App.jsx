@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './assets/css/main.css';
 import './App.css';
+import stateApp from './stateApp.json'; 
 
 /* Contenedores de sitio */
 import AboutExtend from './pages/AboutExtend.jsx';
@@ -26,14 +27,16 @@ import SeoEdit from './pages/SeoEdit.jsx';
 import TestViews from './pages/TestViews.jsx';
 
 function App() {
-  const [showAddEvent, setShowAddEvent] = useState(true);
+  const [showAddEvent, setShowAddEvent] = useState(stateApp.showAddEvent);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowAddEvent(false);
-    }, 2000); // 5 segundos
+    if (stateApp.showAddEvent) {
+      const timer = setTimeout(() => {
+        setShowAddEvent(false);
+      }, stateApp.timeout);
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (

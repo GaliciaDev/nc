@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../../assets/css/views/squaresJumpers.css';
 import CompanyLogo from '../../../../../backend/assets/icons/settings/logo-nc-sin-fondo.png';
+import stateApp from '../../../stateApp.json';
 
 const SquaresJumpers = () => {
+    const [timeout, setTimeoutValue] = useState(stateApp.timeout); // Usar el valor de timeout del JSON
+
     useEffect(() => {
         let spinner = document.getElementById("spinner");
         let ctx = spinner.getContext("2d");
@@ -42,7 +45,7 @@ const SquaresJumpers = () => {
             if (typeof animation_loop != undefined) clearInterval(animation_loop);
             new_degrees = 360;
             difference = new_degrees - degrees;
-            animation_loop = setInterval(animate_to, 10000/difference);
+            animation_loop = setInterval(animate_to, timeout/difference); // Usar el valor de timeout
         }
       
         function animate_to() {
@@ -56,7 +59,7 @@ const SquaresJumpers = () => {
         }
         
         draw();
-    }, []);
+    }, [timeout]); // Ejecutar el efecto cuando el timeout cambie
 
     return (
         <div className="jumpersq__container flex flex-col justify-center items-center w-full h-screen bg-black">
@@ -72,10 +75,6 @@ const SquaresJumpers = () => {
                 <canvas className='irradiatetxt'  id="spinner" width="300" height="300"></canvas>
                                
             </div>
-
-                
-                
-                
         </div>
     );
 }
