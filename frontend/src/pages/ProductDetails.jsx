@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/views/productDetails.css';
 import ViewProductDetails from '../components/Animated/ViewProductDetails.jsx';
+import Footer from '../components/Footer.jsx';
 
 
 
@@ -13,10 +14,11 @@ const ProductDetails = () => {
   return (
     <div>
       
-      <div className='bg-white w-full h-[100vh]'>
-        <h1 className='text-4xl text-center p-10'>Pruebas funciones asincronas</h1>
+      <div className='bg-white w-full h-[100vh] pt-[10vh]'>
+        
         
         <ViewProductDetails />
+        <Footer />
         
 
 

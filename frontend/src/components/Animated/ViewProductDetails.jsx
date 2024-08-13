@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import imgProducs from '../../../../backend/models/site/viewProductDetails.json';
+import datasheet from '../../../public/products/3-2-1/nibe/nibeData.jpg';
+import ButtonDatasheet from '../buttons/ButtonDatasheet';
+import backPage from '../../../public/backPage.png'
 
 const ViewProductDetails = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +58,7 @@ const ViewProductDetails = () => {
       if (startX.current > endX.current) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
       } else if (startX.current < endX.current) {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + imageArray.length) % imageArray.length);
+        setCurrentIndex((prevIndex - 1 + imageArray.length) % imageArray.length);
       }
       isDragging.current = false;
     }
@@ -69,53 +72,67 @@ const ViewProductDetails = () => {
   const getImageIndex = (offset) => (currentIndex + offset + imageArray.length) % imageArray.length;
 
   return (
-    <div className=''>
-      <div className="container mx-auto md:w-[35vw]">
-        {/* Primera fila con una sola columna */}
-        <div className="grid grid-cols-1">
-          <div className="col-span-1">
-            <div
-              className="relative w-full h-[20vh] md:h-[32vh] overflow-hidden"
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={handleMouseUp}
-              onMouseLeave={handleMouseUp}
-            >
-              {imageArray.map((image, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-opacity duration-${transitionSpeed} ease-in-out ${
-                    index === currentIndex ? 'opacity-100' : 'opacity-0'
-                  }`}
-                >
-                  <img src={image.src} alt={image.alt} className="w-full h-full object-cover object-center"/>
-                </div>
-              ))}
-            </div>
+    <div className='container mx-auto md:w-[70vw]'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Columna izquierda */}
+        <div className="col-span-1">
+          {/* Título y botón de retroceso */}
+          <div className='flex justify-between items-center'>
+            <a className="flex animate-palpitar" href="../">
+              <img src={backPage} alt="" className="w-8 h-8 mt-[-4vw] md:mt-0" />
+            </a>
+            <p className='flex font-bold text-[#7878788e] md:hidden'>Modelo 3-2-1</p>
           </div>
-        </div>
-        {/* Segunda fila con tres columnas */}
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-2">
-          {isInitialDelay ? (
-            [imgLeft, imgMain, imgRight].map((image, index) => (
+          <h2 className="text-[2.2em] font-bold pb-3 ">Nibe</h2>
+          
+          {/* Contenedor de imágenes */}
+          <div className="relative w-full h-[20vh] md:h-[32vh] overflow-hidden"
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
+          >
+            {imageArray.map((image, index) => (
               <div
                 key={index}
-                className="col-span-1 h-65 opacity-100"
+                className={`absolute inset-0 transition-opacity duration-${transitionSpeed} ease-in-out ${
+                  index === currentIndex ? 'opacity-100' : 'opacity-0'
+                }`}
               >
-                <img src={image.src} alt={image.alt} className="w-full h-full object-cover object-center overflow-hidden" />
+                <img src={image.src} alt={image.alt} className="w-full h-full object-cover object-center"/>
               </div>
-            ))
-          ) : (
-            [getImageIndex(-1), currentIndex, getImageIndex(1)].map((index, i) => (
-              <div
-                key={i}
-                className={`col-span-1 h-65 ${i === 1 ? 'opacity-100' : 'opacity-40'}`}
-                onClick={() => handleImageClick(index)}
-              >
-                <img src={imageArray[index].src} alt={imageArray[index].alt} className="w-full h-full object-cover object-center overflow-hidden" />
-              </div>
-            ))
-          )}
+            ))}
+          </div>
+          
+          {/* Imágenes adicionales */}
+          <div className="grid grid-cols-3 gap-2 mt-4">
+            {isInitialDelay ? (
+              [imgLeft, imgMain, imgRight].map((image, index) => (
+                <div
+                  key={index}
+                  className="col-span-1 h-65 opacity-100"
+                >
+                  <img src={image.src} alt={image.alt} className="w-full h-full object-cover object-center overflow-hidden" />
+                </div>
+              ))
+            ) : (
+              [getImageIndex(-1), currentIndex, getImageIndex(1)].map((index, i) => (
+                <div
+                  key={i}
+                  className={`col-span-1 h-65 ${i === 1 ? 'opacity-100' : 'opacity-40'}`}
+                  onClick={() => handleImageClick(index)}
+                >
+                  <img src={imageArray[index].src} alt={imageArray[index].alt} className="w-full h-full object-cover object-center overflow-hidden" />
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+        
+        {/* Columna derecha */}
+        <div className="col-span-1">
+          <div className='mt-[-2vh]'><img src={datasheet} className="w-full h-100"/></div>
+          <div className='flex justify-end p-2 mt-[-5vh] md:mr-5'><ButtonDatasheet /></div>
         </div>
       </div>
     </div>

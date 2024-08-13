@@ -25,6 +25,7 @@ import FormMeasure from './pages/FormMeasure.jsx';
 import ContactEdit from './pages/ContactEdit.jsx';
 import SeoEdit from './pages/SeoEdit.jsx';
 import TestViews from './pages/TestViews.jsx';
+import ExpoMueblesB from './pages/ExpoMuebleB.jsx';
 
 function App() {
   const [showAddEvent, setShowAddEvent] = useState(stateApp.showAddEvent);
@@ -52,6 +53,8 @@ function App() {
           <Route path="/galleryviews" element={<GalleryViews />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/productdetails" element={<ProductDetails />} />
+          <Route path="/expomuebleb" element={<ExpoMueblesB />} />
         </Route>
 
         {/* Rutas que no usan MainConcept */}
