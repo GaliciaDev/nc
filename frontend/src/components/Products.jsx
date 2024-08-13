@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useMemo, useCallback } from "react";
 import '../assets/css/components/products.css';
 import data from '../../../backend/models/site/products.json';
 
+// Importar las imágenes
+import sedurre from '../../public/catalogo2024/img/sedurre.png';
+import anotherImage from '../../public/catalogo2024/img/andes.png'; // Importa otras imágenes según sea necesario
+
 const Products = () => {
   const { sectionTitle, productsData } = data;
   const cardsRef = useRef([]);
@@ -79,18 +83,34 @@ const Products = () => {
   );
 }
 
-const ProductCard = React.memo(React.forwardRef(({ product, index }, ref) => (
-  <div
-    className="products-card"
-    ref={ref}
-    data-index={index}
-  >
-    <img src={product.imgSrc} alt={product.title} loading="lazy" />
-    <div className="products-card-body">
-      <h5 className="products-card-title">{product.title}</h5>
-      <p className="products-card-text">{product.description}</p>
+const ProductCard = React.memo(React.forwardRef(({ product, index }, ref) => {
+  // Asignar la imagen importada según el producto
+  let imgSrc;
+  switch (product.title) {
+    case 'Sedurre':
+      imgSrc = sedurre;
+      break;
+    case 'Another Product':
+      imgSrc = anotherImage;
+      break;
+    // Añadir más casos según sea necesario
+    default:
+      imgSrc = ''; // O una imagen por defecto
+  }
+
+  return (
+    <div
+      className="products-card"
+      ref={ref}
+      data-index={index}
+    >
+      <img src={imgSrc} alt={product.title} loading="lazy" />
+      <div className="products-card-body">
+        <h5 className="products-card-title">{product.title}</h5>
+        <p className="products-card-text">{product.description}</p>
+      </div>
     </div>
-  </div>
-)));
+  );
+}));
 
 export default Products;

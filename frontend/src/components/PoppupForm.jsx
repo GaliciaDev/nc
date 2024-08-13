@@ -1,9 +1,31 @@
 import React from 'react';
 import { useModal } from '../context/ModalContext';
-import AuthGoogle from "../context/AuthGoogle";
 
 const PoppupForm = () => {
-  const { openModal,isModalOpen, closeModal } = useModal();
+  const { openModal, isModalOpen, closeModal } = useModal();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append('action', 'register'); // Añadir el campo action
+    const data = new URLSearchParams(formData);
+
+    try {
+      const response = await fetch('https://newconcept.com.mx/config.php', {
+        method: 'POST',
+        body: data,
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
 
   return (
     <div>
@@ -47,7 +69,7 @@ const PoppupForm = () => {
             </div>
 
             <div className="p-4 md:p-5">
-              <form className="space-y-4" action="#">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="email"
@@ -78,6 +100,7 @@ const PoppupForm = () => {
                     placeholder="••••••••"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                     required
+                    autoComplete="current-password"
                   />
                 </div>
                 <div className="flex justify-between">
@@ -105,11 +128,10 @@ const PoppupForm = () => {
                     Olvidaste tu contraseña?
                   </a>
                 </div>
-                <AuthGoogle />
+                
                 <button
                   type="submit"
                   className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  onClick={openModal.getDatasheet}
                 >
                   Enviar
                 </button>
