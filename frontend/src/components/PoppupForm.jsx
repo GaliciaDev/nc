@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useModal } from '../context/ModalContext';
 
 const PoppupForm = () => {
-  const { openModal, isModalOpen, closeModal } = useModal();
+  const { isModalOpen, closeModal } = useModal();
+  const [isRegistered, setIsRegistered] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,12 @@ const PoppupForm = () => {
 
       const result = await response.json();
       alert(result.message);
+
+      if (result.status === 'success') {
+        setIsRegistered(true); // Mostrar el botón de descarga
+        closeModal(); // Cerrar el modal
+        window.location.href = result.redirect; // Redirigir a la URL especificada
+      }
     } catch (error) {
       console.error('Error:', error);
     }
@@ -118,15 +125,9 @@ const PoppupForm = () => {
                       htmlFor="remember"
                       className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      Recordar
+                      Aceptar terminos y condiciones
                     </label>
                   </div>
-                  <a
-                    href="#"
-                    className="text-sm text-blue-700 hover:underline dark:text-blue-500"
-                  >
-                    Olvidaste tu contraseña?
-                  </a>
                 </div>
                 
                 <button
@@ -135,16 +136,26 @@ const PoppupForm = () => {
                 >
                   Enviar
                 </button>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                  ¿Ya tienes cuenta?{' '}
+              </form>
+              {isRegistered && (
+                <div className="mt-4">
                   <a
-                    href="#"
-                    className="text-blue-700 hover:underline dark:text-blue-500"
+                    href="https://drive.google.com/file/d/15IPKTKVFaRWAIt1LUbVs35niXaFccQ5-/view?usp=drive_link"
+                    className="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                   >
-                    Iniciar sesion
+                    Descargar
                   </a>
                 </div>
-              </form>
+              )}
+              <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
+                ¿Ya tienes cuenta?{' '}
+                <a
+                  href="#"
+                  className="text-blue-700 hover:underline dark:text-blue-500"
+                >
+                  Iniciar sesion
+                </a>
+              </div>
             </div>
           </div>
         </div>

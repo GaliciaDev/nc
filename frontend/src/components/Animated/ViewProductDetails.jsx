@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import imgProducs from '../../../../backend/models/site/viewProductDetails.json';
-import datasheet from '../../../public/products/3-2-1/nibe/nibeData.jpg';
+
 import ButtonDatasheet from '../buttons/ButtonDatasheet';
 import backPage from '../../../public/backPage.png'
 
@@ -131,7 +131,7 @@ const ViewProductDetails = () => {
         
         {/* Columna derecha */}
         <div className="col-span-1">
-          <div className='mt-[-2vh]'><img src={datasheet} className="w-full h-100"/></div>
+          <div className='mt-[-2vh]'><img src="" className="w-full h-100"/></div>
           <div className='flex justify-end p-2 mt-[-5vh] md:mr-5'><ButtonDatasheet /></div>
         </div>
       </div>

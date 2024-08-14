@@ -8,102 +8,20 @@
             "title": "BERNA",
             "description": "Descripción de BERNA",
             "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "CHRISTOPHER",
-            "description": "Descripción de CHRISTOPHER",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "BERNA",
-            "description": "Descripción de BERNA",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "CHRISTOPHER",
-            "description": "Descripción de CHRISTOPHER",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "CHRISTOPHER",
-            "description": "Descripción de CHRISTOPHER",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "CHRISTOPHER",
-            "description": "Descripción de CHRISTOPHER",
-            "link": "#"
           }
         ]
       },
       {
         "sectionTitle": "Sofás",
         "productsData": [
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          }
+          
 
         ]
       },
       {
         "sectionTitle": "Salas 1-2-3",
         "productsData": [
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          },
-          {
-            "imgSrc": "https://i.ibb.co/kDQB8c8/OTTAVINO.png",
-            "title": "OTTAVINO",
-            "description": "Descripción de OTTAVINO",
-            "link": "#"
-          }
+          
 
         ]
       }

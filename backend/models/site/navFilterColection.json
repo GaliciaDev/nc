@@ -2,15 +2,15 @@
     "title": "Colección 2024",
     "navOptions": [
       {
-        "section": "Colecciones",
+        "section": "",
         "options": ["2024", "2023", "2022"]
       },
       {
-        "section": "Categorías",
+        "section": "",
         "options": ["Sofá", "Esquinera"]
       },
       {
-        "section": "Materiales",
+        "section": "",
         "options": ["Sintético", "Piel", "Tela"]
       }
     ],
