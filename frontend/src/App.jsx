@@ -26,6 +26,8 @@ import ContactEdit from './pages/ContactEdit.jsx';
 import SeoEdit from './pages/SeoEdit.jsx';
 import TestViews from './pages/TestViews.jsx';
 import ExpoMueblesB from './pages/ExpoMuebleB.jsx';
+import ViewDatasheet from './pages/ViewDatasheet.jsx'
+import AllModels from './pages/AllModels.jsx';
 
 function App() {
   const [showAddEvent, setShowAddEvent] = useState(stateApp.showAddEvent);
@@ -69,6 +71,8 @@ function App() {
         <Route path="/contactedit" element={<ContactEdit />} />
         <Route path="/seoedit" element={<SeoEdit />} />
         <Route path="/testviews" element={<TestViews />} />
+        <Route path="/viewdatasheet" element={<ViewDatasheet />} />
+        <Route path="/allmodels" element={<AllModels />} />
 
       </Routes>
     </div>

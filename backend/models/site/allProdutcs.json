@@ -1,29 +1,185 @@
 {
-    "sections": [
-      {
-        "sectionTitle": "Esquineras",
-        "productsData": [
-          {
-            "imgSrc": "https://i.ibb.co/MgHTxyk/Christopher-web.png",
-            "title": "BERNA",
-            "description": "Descripción de BERNA",
-            "link": "#"
-          }
-        ]
-      },
-      {
-        "sectionTitle": "Sofás",
-        "productsData": [
-          
-
-        ]
-      },
-      {
-        "sectionTitle": "Salas 1-2-3",
-        "productsData": [
-          
-
-        ]
-      }
-    ]
-  }
+  "sections": [
+    {
+      "sectionTitle": "Sillon",
+      "productsData": [
+        {
+          "imgSrc": "https://i.ibb.co/bKXjwKW/Bastian.png",
+          "title": "Bastian",
+          "description": "Descripción de Andes",
+          "link": "#",
+          "promocionar": true
+        },
+        {
+          "imgSrc": "https://i.ibb.co/MMGMmVD/Einar.png",
+          "title": "Einar",
+          "description": "Descripción de Einar",
+          "link": "#",
+          "promocionar": true
+        },
+        {
+          "imgSrc": "https://i.ibb.co/z4H46JD/FLUX.png",
+          "title": "Flux",
+          "description": "Descripción de Flux",
+          "link": "#",
+          "promocionar": true
+        },
+        {
+          "imgSrc": "https://i.ibb.co/dfNJhrj/Kanda.png",
+          "title": "Kanda",
+          "description": "Descripción de Kanda",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/GJ28fWD/Oison.png",
+          "title": "Oison",
+          "description": "Descripción de Oison",
+          "link": "#",
+          "promocionar": true
+        },
+        {
+          "imgSrc": "https://i.ibb.co/NyM5J4F/PRISM.png",
+          "title": "Prism",
+          "description": "Descripción de Prism",
+          "link": "#",
+          "promocionar": true
+        },
+        {
+          "imgSrc": "https://i.ibb.co/vhyPNm4/PULSE.png",
+          "title": "Pulse",
+          "description": "Descripción de Pulse",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/WWVXc4H/Renaud.png",
+          "title": "Renaud",
+          "description": "Descripción de Renaud",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/fpZ0fJT/VIBE.png",
+          "title": "Vibe",
+          "description": "Descripción de Vibe",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/JCqs3My/Vicent.png",
+          "title": "Vicent",
+          "description": "Descripción de Vicent",
+          "link": "#",
+          "promocionar": false
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Modular",
+      "productsData": [
+        {
+          "imgSrc": "https://i.ibb.co/4TWpPnq/andes-1-png.png",
+          "title": "Andes",
+          "description": "Descripción de Andes",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/X3JNx4g/FOREST.png",
+          "title": "Forest",
+          "description": "Descripción de ",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/mJ9vJzm/Jenny.png",
+          "title": "Jenny",
+          "description": "Descripción de Jenny",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/Ht1SsdJ/Oasis.png",
+          "title": "Oasis",
+          "description": "Descripción de Oasis",
+          "link": "#",
+          "promocionar": false
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Puff",
+      "productsData": [
+        {
+          "imgSrc": "https://i.ibb.co/FzxBkcH/Barrel.png",
+          "title": "Barrel",
+          "description": "Descripción de Barel",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/RBpKDph/Botte.png",
+          "title": "Botte",
+          "description": "Descripción de Botte",
+          "link": "#",
+          "promocionar": false
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Salas 3-2-1",
+      "productsData": [
+        {
+          "imgSrc": "https://i.ibb.co/PcRkWn7/Baku-sofa.png",
+          "title": "Baku",
+          "description": "Descripción de Baku",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/xqMnxnP/bubba-sofa.png",
+          "title": "Bubba",
+          "description": "Descripción de Bubba",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/ypkMX4c/Dan-sofa.png",
+          "title": "Dan",
+          "description": "Descripción de Bubba",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/NK2Hct4/gump-sofa.png",
+          "title": "Gump",
+          "description": "Descripción de Gump",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/6PWLqDs/Haven-sofa.png",
+          "title": "Haven",
+          "description": "Descripción de Haven",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/mJ9vJzm/Jenny.png",
+          "title": "Jenny",
+          "description": "Descripción de Jenny",
+          "link": "#",
+          "promocionar": false
+        },
+        {
+          "imgSrc": "https://i.ibb.co/rcQr2LX/Sedurre-sofa-a2.png",
+          "title": "Sedurre",
+          "description": "Descripción de Sedurre",
+          "link": "#",
+          "promocionar": false
+        }
+      ]
+    }
+  ]
+}

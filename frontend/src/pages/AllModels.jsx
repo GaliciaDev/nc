@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ExpoMuebleB = () => {
+const AllModels = () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ const ExpoMuebleB = () => {
     console.log('Payload:', payload);
 
     try {
-      const response = await fetch('https://newconcept.com.mx/config.php', {
+      const response = await fetch('https://newconcept.com.mx/view.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -77,4 +77,4 @@ const ExpoMuebleB = () => {
   );
 }
 
-export default ExpoMuebleB;
+export default AllModels;

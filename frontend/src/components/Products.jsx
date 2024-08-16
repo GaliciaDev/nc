@@ -1,13 +1,9 @@
 import React, { useEffect, useRef, useMemo, useCallback } from "react";
 import '../assets/css/components/products.css';
-import data from '../../../backend/models/site/products.json';
-
-// Importar las imágenes
-import sedurre from '../../public/catalogo2024/img/sedurre.png';
-import anotherImage from '../../public/catalogo2024/img/andes.png'; // Importa otras imágenes según sea necesario
+import data from '../../../backend/models/site/allProdutcs.json';
 
 const Products = () => {
-  const { sectionTitle, productsData } = data;
+  const { sections } = data;
   const cardsRef = useRef([]);
   const observerRef = useRef(null);
   const observerNormalRef = useRef(null);
@@ -62,55 +58,43 @@ const Products = () => {
     };
   }, [observerCallback, observerNormalCallback]);
 
-  const productCards = useMemo(() => (
-    productsData.map((product, index) => (
-      <ProductCard
-        key={index}
-        product={product}
-        ref={(el) => (cardsRef.current[index] = el)}
-        index={index}
-      />
+  const sectionCards = useMemo(() => (
+    sections.map((section, sectionIndex) => (
+      <div key={sectionIndex} className="products-section">
+        <div className="products-container">
+          {section.productsData
+            .filter(product => product.promocionar)
+            .map((product, productIndex) => (
+              <ProductCard
+                key={productIndex}
+                product={product}
+                ref={(el) => (cardsRef.current[sectionIndex * 100 + productIndex] = el)}
+                index={productIndex}
+              />
+            ))}
+        </div>
+      </div>
     ))
-  ), [productsData]);
+  ), [sections]);
 
   return (
-    <div className="products-section">
-      <div className="products-container">
-        <h1 className="products-section-title">{sectionTitle}</h1>
-        {productCards}
-      </div>
+    <div>
+      {sectionCards}
     </div>
   );
 }
 
-const ProductCard = React.memo(React.forwardRef(({ product, index }, ref) => {
-  // Asignar la imagen importada según el producto
-  let imgSrc;
-  switch (product.title) {
-    case 'Sedurre':
-      imgSrc = sedurre;
-      break;
-    case 'Another Product':
-      imgSrc = anotherImage;
-      break;
-    // Añadir más casos según sea necesario
-    default:
-      imgSrc = ''; // O una imagen por defecto
-  }
-
-  return (
-    <div
-      className="products-card"
-      ref={ref}
-      data-index={index}
-    >
-      <img src={imgSrc} alt={product.title} loading="lazy" />
-      <div className="products-card-body">
-        <h5 className="products-card-title">{product.title}</h5>
-        <p className="products-card-text">{product.description}</p>
-      </div>
+const ProductCard = React.memo(React.forwardRef(({ product, index }, ref) => (
+  <div
+    className="products-card"
+    ref={ref}
+    data-index={index}
+  >
+    <img src={product.imgSrc} alt={product.title} loading="lazy" />
+    <div className="products-card-body">
+      <h5 className="products-card-title">{product.title}</h5>
     </div>
-  );
-}));
+  </div>
+)));
 
 export default Products;
