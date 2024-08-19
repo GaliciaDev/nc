@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 const AllProducts = React.memo(() => {
   const { sections } = data;
 
+
+   /*  */
   const handleIntersection = useCallback((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

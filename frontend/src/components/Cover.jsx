@@ -1,20 +1,29 @@
 import React from 'react';
-import '../assets/css/components/cover.css'
+import '../assets/css/components/cover.css';
 import videoData from '../../../backend/models/site/imagesCover.json';
-/* https://cdn.pixabay.com/video/2024/05/16/212213_large.mp4 */
 
 const Cover = () => {
-    // Accede a la URL del video desde el archivo JSON importado correctamente
-    const videoUrl = videoData.videoData; // Corregido para usar la clave correcta
-  
-    return (
-      <div className="cover-container">
-        <video className="videoTag" autoPlay loop muted>
-          <source src={videoUrl} type="video/mp4" />
-          
-        </video>
-      </div>
-    );
-  };
-  
-  export default Cover;
+  const videoUrl = videoData.videoData; // URL del video en formato MP4
+  const posterImage = 'https://i.ibb.co/BBD0nXY/back04.jpg'; // URL de la imagen de poster
+
+  return (
+    <div className="cover-container">
+      <video
+        className="videoTag"
+        autoPlay
+        playsInline
+        loop
+        muted
+        preload="auto"
+        poster={posterImage}
+        onCanPlayThrough={() => console.log('Video can play through')}
+        onError={(e) => console.error('Video error:', e)}
+      >
+        <source src={videoUrl} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  );
+};
+
+export default Cover;

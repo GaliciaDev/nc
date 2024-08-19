@@ -4,12 +4,12 @@
     
     {
       "name": "Cover",
-      "show": false,
+      "show": true,
       "order": 1
     },
     {
       "name": "SwiperCover",
-      "show": true,
+      "show": false,
       "order": 1
     },
 

@@ -142,7 +142,7 @@
           "title": "Bubba",
           "description": "Descripción de Bubba",
           "link": "#",
-          "promocionar": false
+          "promocionar": true
         },
         {
           "imgSrc": "https://i.ibb.co/ypkMX4c/Dan-sofa.png",
